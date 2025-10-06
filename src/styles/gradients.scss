@@ -1,0 +1,27 @@
+/* Up & Down Gradient */
+.bg-brand-gradient {
+  background: linear-gradient(180deg, #004363, #0E0E0E); /* vertical gradient */
+  background-repeat: no-repeat;
+  background-size: 200% 200%; /* extra space to allow movement */
+}
+
+/* Keyframes for vertical motion */
+@keyframes gradient-move-vertical {
+  0%   { background-position: 50% 0%; }
+  50%  { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
+.bg-brand-gradient-animated {
+  background: linear-gradient(180deg, #004363, #0E0E0E);
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  animation: gradient-move-vertical 10s ease-in-out infinite;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .bg-brand-gradient-animated {
+    animation: none;
+  }
+}
