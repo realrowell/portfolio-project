@@ -8,7 +8,7 @@ const PortfolioProjects = [
     {
         id: '1',
         name: "Leave Management System",
-        description: "A web-based application that allows employees to request and manage their leaves, while enabling managers to approve or reject leave requests.",
+        description: "This is Employee Leave Management System where customized to fit the needs of the company. The used of Laravel Framework offers the security, reliability, and scalability of the project where the project can be expanded in the future to add more features and module. In this project, I used PHP for the server side programming and Bootstrap, CSS, JavaScript, and JQuery for the front-end rendering.",
         imageUrl: "/images/projects/lms-001.png",
         featuredImages: ["/images/projects/lms-001.png","/images/projects/lms-002.png", "/images/projects/lms-003.png"],
         projectUrl: "",
@@ -146,30 +146,30 @@ export default function SectionProjects( ){
                             </h5>
                             </Link>
 
-                            <p className="mb-3 poppins-regular text-sm text-gray-700 ">
-                            {project.description}
+                            <p className="mb-3 poppins-regular text-sm text-gray-700 line-clamp-3">
+                                {project.description}
                             </p>
 
                             <button
                             onClick={() => setActiveProject(project)}
                             className="btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
                             >
-                            Know more
-                            <svg
-                                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 14 10"
-                            >
-                                <path
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                                />
-                            </svg>
+                                Know more
+                                <svg
+                                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 14 10"
+                                >
+                                    <path
+                                    stroke="currentColor"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                    />
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -179,7 +179,7 @@ export default function SectionProjects( ){
                 {/* single modal rendered once */}
                 {activeProject && (
                     <div
-                        className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+                        className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 md:p-5 sm:p-4 p-4"
                         onClick={() => setActiveProject(null)} // click outside to close
                     >
                         <div
@@ -200,7 +200,7 @@ export default function SectionProjects( ){
                                             <img
                                             src={img ?? "/images/banner-placeholder.jpg"}
                                             alt={activeProject.name}
-                                            className="w-full max-h-[60vh] object-contain rounded-lg mx-auto"
+                                            className="w-full max-h-[50vh] object-contain rounded-lg mx-auto"
                                             />
                                         </div>
                                         ))
@@ -217,11 +217,28 @@ export default function SectionProjects( ){
                                 </Slider>
                             </div>
                             
-                            <div className="flex flex-col gap-2">
-                                <h2 id="modal-title" className="text-2xl font-bold  text-neutral-800">
-                                    {activeProject.name}
-                                </h2> 
-                                <p className="text-gray-600 ">{activeProject.description}</p>
+                            <div className="flex flex-col gap-5">
+                                <div className="flex flex-col gap-2">
+                                    <h2 id="modal-title" className="text-2xl font-bold  text-neutral-800">
+                                        {activeProject.name}
+                                    </h2> 
+                                    {activeProject.tags && activeProject.tags.length > 0 && (
+                                        <div className="flex flex-wrap gap-2">
+                                            {activeProject.tags.map((tag, idx) => (
+                                                <span
+                                                key={idx}
+                                                className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="flex flex-col gap-1">
+                                    <p className="text-gray-500 poppins-bold text-sm">Project Description:</p>
+                                    <p className="text-gray-800  text-sm">{activeProject.description}</p>
+                                </div>
                             </div>
 
                             <div className="flex justify-end gap-2">
