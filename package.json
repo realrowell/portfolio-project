@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "type": "module",
-  "scripts": { 
+  "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
@@ -12,6 +12,8 @@
     "@fontsource/poppins": "^5.2.7",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "isbot": "^5.1.31",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
