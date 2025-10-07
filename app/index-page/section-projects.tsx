@@ -1,6 +1,8 @@
 import { Link } from "react-router";
-import { useState, useEffect  } from "react";
-import useEmblaCarousel from 'embla-carousel-react';
+import { useRef, useState, useEffect  } from "react";  
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PortfolioProjects = [
     {
@@ -17,7 +19,7 @@ const PortfolioProjects = [
         name: "Recruitment Management System",
         description: "A web-based application that streamlines the recruitment process by allowing HR personnel to manage job postings, applications, and candidate evaluations.",
         imageUrl: "/images/projects/rms-003.png",
-        featuredImages: ["/images/projects/rms-001.png","/images/projects/rms-002.png", "/images/projects/rms-003.png"],
+        featuredImages: ["/images/projects/rms-001.png","/images/projects/rms-002.png", "/images/projects/rms-003.png", "/images/projects/rms-004.png", "/images/projects/rms-005.png", "/images/projects/rms-006.png"],
         projectUrl: "",
         tags: ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
     },
@@ -59,15 +61,21 @@ const PortfolioProjects = [
     }
 ]
 
-export default function SectionProjects(){
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }); 
-    const [activeProject, setActiveProject] = useState<typeof PortfolioProjects[number] | null>(null);
+const modalSettings = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 380,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: "0px",
+};
 
-    useEffect(() => {
-        if (emblaApi) {
-        console.log("Embla slides:", emblaApi.slideNodes());
-        }
-    }, [emblaApi]);
+export default function SectionProjects( ){ 
+    const modalSliderRef = useRef<Slider | null>(null);
+    const [activeProject, setActiveProject] = useState<typeof PortfolioProjects[number] | null>(null); 
 
     // close on Esc
     useEffect(() => {
@@ -76,24 +84,23 @@ export default function SectionProjects(){
         };
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, []);
+    }, []); 
+
+    var settings = {
+        dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  centerMode: true, // centers slide
+  centerPadding: "0px",
+  adaptiveHeight: true,
+    };
+
 
     return (
-        <>
-        <style>
-            {
-                `.embla {
-                overflow: hidden;
-                }
-                .embla__container {
-                display: flex;
-                }
-                .embla__slide {
-                flex: 0 0 100%;
-                min-width: 0;
-                }`
-            }
-        </style>
+        <> 
         <div className="bg-gradient-to-b from-[#150027] to-[#000000] text-white py-20">
             <div className="container flex flex-col items-center justify-center gap-10">
                 <div className="flex flex-col text-center ">
@@ -101,7 +108,22 @@ export default function SectionProjects(){
                     Things I’ve Built & Loved
                 </h3>
                 <p className="text-lg">Portfolio Highlights</p>
-                </div>
+                </div> 
+                {/* <div className="slider-container max-w-3xl mx-auto py-10">
+                    <Slider {...settings}>
+                        {PortfolioProjects.map((project) => (
+                        <div key={project.id} className="p-4 text-center">
+                            <img
+                            src={project.imageUrl ?? "/images/banner-placeholder.jpg"}
+                            alt={project.name}
+                            className="rounded-lg mx-auto object-cover aspect-video"
+                            />
+                            <h3 className="text-xl font-bold mt-4">{project.name}</h3>
+                            <p className="text-sm text-gray-500">{project.description}</p>
+                        </div>
+                        ))}
+                    </Slider>
+                </div> */}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
                 {PortfolioProjects.map((project) => (
@@ -161,32 +183,46 @@ export default function SectionProjects(){
                         onClick={() => setActiveProject(null)} // click outside to close
                     >
                         <div
-                            className="container bg-white rounded-xl p-6 max-w-md w-full shadow-xl"
+                            className="container bg-white rounded-xl p-6 max-w-md w-full shadow-xl flex flex-col gap-10"
                             onClick={(e) => e.stopPropagation()} // prevent overlay click
                             role="dialog"
                             aria-modal="true"
                             aria-labelledby="modal-title"
-                        >
-                            <div className="embla overflow-hidden" ref={emblaRef}>
-                                <div className="embla__container flex">
-                                    {activeProject.featuredImages?.map((img, index) => (
-                                        // <div className="embla__slide">Slide 1</div>
-                                        <div className="embla__slide flex-[0_0_100%] min-w-0 p-4">
+                        > 
+                            <div className="w-full">
+                                <Slider
+                                    ref={(slider) => { modalSliderRef.current = slider }}
+                                    {...modalSettings}
+                                >
+                                    {(activeProject.featuredImages && activeProject.featuredImages.length > 0)
+                                    ? activeProject.featuredImages.map((img, idx) => (
+                                        <div key={idx} className="px-3">
                                             <img
-                                                src={img ?? activeProject.imageUrl ?? "/images/banner-placeholder.jpg"}
-                                                alt={activeProject.name}
-                                                className="embla__slide object-cover aspect-video"
+                                            src={img ?? "/images/banner-placeholder.jpg"}
+                                            alt={activeProject.name}
+                                            className="w-full max-h-[60vh] object-contain rounded-lg mx-auto"
                                             />
                                         </div>
-                                    ))} 
-                                </div>
-                            </div>  
+                                        ))
+                                    : (
+                                        <div className="px-3">
+                                        <img
+                                            src={activeProject.imageUrl ?? "/images/banner-placeholder.jpg"}
+                                            alt={activeProject.name}
+                                            className="w-full max-h-[60vh] object-contain rounded-lg mx-auto"
+                                        />
+                                        </div>
+                                    )
+                                    }
+                                </Slider>
+                            </div>
                             
-                            <h2 id="modal-title" className="text-2xl font-bold mb-3 text-neutral-800">
-                                {activeProject.name}
-                            </h2>
-
-                            <p className="text-gray-600 mb-5">{activeProject.description}</p>
+                            <div className="flex flex-col gap-2">
+                                <h2 id="modal-title" className="text-2xl font-bold  text-neutral-800">
+                                    {activeProject.name}
+                                </h2> 
+                                <p className="text-gray-600 ">{activeProject.description}</p>
+                            </div>
 
                             <div className="flex justify-end gap-2">
                                 <button
@@ -210,4 +246,4 @@ export default function SectionProjects(){
         </div>
         </>
     );
-}
+} 
