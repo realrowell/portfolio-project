@@ -120,13 +120,9 @@ export default function SectionProjects( ){
             <div className="container flex flex-col items-center justify-center gap-10">
                 <div className="flex flex-col text-center ">
                 <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">
-                    Things I’ve{' '}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400">
-                        Built
-                    </span>
-                    {' & '} 
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-teal-400">
-                        Loved
+                    Things I’ve{' '} 
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-300 to-blue-500">
+                        Built & Loved
                     </span>
                 </h3>
                 <p className="text-lg">Portfolio Highlights</p>

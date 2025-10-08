@@ -55,10 +55,10 @@ export default function SectionContact() {
             <div className="flex flex-col items-center justify-center">
                 <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold text-center">
                     Let’s create something{' '}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 uppercase">
-                        Amazing
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-300 to-blue-500">
+                        amazing together.
                     </span>
-                    {' '} together.</h3> 
+                </h3> 
                 <p className="text-lg">Contact me at</p>
             </div>
             <div className="flex md:flex-row sm:flex-col flex-col items-base justify-between gap-10 mt-20">

@@ -7,11 +7,10 @@ export default function HeroBanner(){
         <div className="min-h-screen bg-gradient-to-b from-[#004363] to-[#000000] flex items-center justify-center">
             <div className="container text-center flex flex-col gap-10 mb-20"> 
                 <h1 className="text-white lg:text-7xl md:text-7xl sm:text-6xl text-4xl md:leading-[90px] sm:leading-[70px] leading-[45px] poppins-bold" >
-                    <>
-                        Designing the{' '}
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400">
-                            interface
-                        </span>{'. '}
+                    <> 
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-400 to-blue-400">
+                            Designing
+                        </span>{' the interface. '}
                         Developing the{' '}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-teal-400">
                             experience

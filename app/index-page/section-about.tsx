@@ -23,7 +23,10 @@ export default function SectionAbout() {
                     <img src="/images/banner-001.png" alt="Profile Photo" className="object-contain md:object-cover aspect-square" />
                 </div>
                 <div className="flex flex-1 flex-col items-start justify-center gap-5">
-                    <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">Hi, I'm Rowell Jay</h3>
+                    <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">
+                        Hi, I'm{' '} 
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-emerald-300 ">Rowell Jay</span>
+                    </h3>
                     <p className="text-white md:text-lg sm:text-md text-md  max-w-md text-justify">
                         Hi! I’m a web developer with a designer’s eye and a storyteller’s mindset. My background in graphic design, photography, and videography helps me craft websites that are not only functional but visually compelling. I love turning ideas into interactive experiences that connect people and inspire creativity. Every project I take on is a chance to learn, experiment, and push boundaries in design and technology.
                     </p> 
