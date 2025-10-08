@@ -1,0 +1,55 @@
+.btn-primary-app {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+.btn-primary-app:hover, .btn-primary-sm:active {
+    background-color: var(--primary-color-darker) !important;
+    color: white !important;
+}
+.btn-error-subtle-app{
+    background-color: var(--error-subtle-color);
+    color: var(--error-text-color);
+}
+.btn-error-subtle-app:hover, .btn-error-subtle-app:active {
+    background-color: var(--error-color) !important;
+    color: white !important;
+}
+.btn-info-subtle-app{
+    background-color: var(--info-subtle-color);
+    color: var(--info-text-color);
+}
+.btn-info-subtle-app:hover, .btn-info-subtle-app:active {
+    background-color: var(--info-color) !important;
+    color: white !important;
+}
+.btn-info-app{
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: white;
+}
+.btn-info-app:hover, .btn-info-app:active {
+    background-color: var(--info-color-darker) !important;
+    border-color: var(--info-color-darker) !important;
+    color: white !important;
+}
+.btn-danger-app{
+    background-color: var(--error-color);
+    border-color: var(--error-color);
+    color: white;
+}
+.btn-danger-app:hover, .btn-danger-app:active {
+    background-color: var(--error-color-darker) !important;
+    border-color: var(--error-color-darker) !important;
+    color: white !important;
+}
+.btn-warning-app{
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: white;
+}
+.btn-warning-app:hover, .btn-warning-app:active {
+    background-color: var(--warning-color-darker) !important;
+    border-color: var(--warning-color-darker) !important;
+    color: white !important;
+}

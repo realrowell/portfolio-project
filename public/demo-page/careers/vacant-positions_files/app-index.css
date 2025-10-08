@@ -1,0 +1,195 @@
+ .body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+    --primary-color: #048b58;
+    --secondary-color: #F1F3F2;
+    --text-color: #585858;
+    --accent-color: #F1A000;
+    --accent-color-2: #FFDD00;
+    --dcm-blue: #0097CF;
+    --background-subtle-light: #EFEFEF;
+
+    --primary-color-hover: #0BD476;
+
+}
+
+.faded {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+.faded:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+}
+.faded.faded-left:after {
+    box-shadow: inset 40px 0 40px -16px;
+}
+.faded.faded-right:after {
+    box-shadow: inset -40px 0 40px -16px;
+}
+.faded.faded-left.faded-right:after {
+    box-shadow: inset 40px 0 40px -16px, inset -40px 0 40px -16px;
+}
+
+
+.body{
+    background-color: #F1F3F2;
+    font-family: 'Poppins', sans-serif, 400;
+    color: #585858;
+}
+
+header.navbar{
+    background-color: var(--primary-color);
+    padding: 10px 40px;
+}
+
+nav.navbar{
+    padding: 10px 40px;
+}
+
+.navbar-card{
+    background-color: white;
+    padding: 5px 20px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-links:hover{
+    filter: brightness(150%);
+}
+
+/* #benefits-container #card-benefits{
+    flex: 1 0 25%;
+} */
+.card-icon{
+    height: 60px;
+    width: 60px;
+}
+
+#benefits-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#card-benefits{
+    text-align: center;
+    width: 300px;
+    flex: 1 1 calc(33.33% - 20px);
+}
+ #benefits-card-text{
+    display: flex;
+    color: #ffffff;
+    background-color: #000000b0;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#card-benefits:hover #benefits-card-text {
+    opacity: 1;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    header.navbar {
+        padding: 10px 10px;
+    }
+    nav.navbar{
+        padding: 10px 10px;
+    }
+    .navbar-card{
+        height: 40px;
+        padding: 5px 10px;
+    }
+    #benefits-container{
+        width: 95vw;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 10px 25px
+    }
+    #card-benefits{
+        flex: none;
+    }
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.border-primary-color{
+    border-color: var(--primary-color);
+    border-style: solid;
+}
+.bg-primary-color{
+    background-color: var(--primary-color);
+}
+.text-primary-color{
+    color: var(--primary-color);
+}
+.text-primary-light{
+    color: var(--primary-color-hover);
+}
+.text-shadow{
+    text-shadow: 3px 3px 5px #000000b7;
+}
+.text-dcm-color{
+    color: var(--dcm-blue);
+}
+.text-accent-color{
+    color: var(--accent-color);
+}
+.text-accent-color-2{
+    color: var(--accent-color-2);
+}
+
+#job-posting-nav{
+    .nav-link-custom{
+        color: white;
+    }
+}
+#job-posting-nav{
+    .nav-link-custom:hover{
+        color: var(--accent-color-2);
+    }
+}
+.bg-subtle-light{
+    background-color: var(--background-subtle-light);
+}
+
+#vacant-cards-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+}
+.vacant-card{
+    width:100%;
+    padding:1rem;
+    box-sizing: border-box;
+}
+@media (min-width:768px) {
+    .vacant-card {
+        width: calc((100% - 2rem) / 3);
+    }
+}
+

@@ -1,0 +1,7 @@
+.search-container-lg input[type="text"]{
+    transition: all 0.3s ease;
+}
+.search-container-sm input[type="text"]:focus{
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}

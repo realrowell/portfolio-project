@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+<title>    Apply Position
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="Bioseed careers. Find a job that fits you" name="description" />
+<meta content="Bioseed Research Philippines, Inc." name="author" />
+<!-- App favicon -->
+<link rel="shortcut icon" href="http://careers.test/assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+rel="stylesheet">
+
+
+<!-- Bootstrap Css -->
+<link href="http://careers.test/assets/css/bootstrap/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="http://careers.test/assets/css/icons.css" id="icons-style" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="http://careers.test/assets/css/app-index.css" id="icons-style" rel="stylesheet" type="text/css" />
+<link href="http://careers.test/assets/css/branding-buttons.css" id="icons-style" rel="stylesheet" type="text/css" />
+<link href="http://careers.test/assets/css/font_poppins.css" id="icons-style" rel="stylesheet" type="text/css" />
+
+<script src="http://careers.test/assets/libs/jquery/jquery.min.js"></script>
+    <!-- plugin css -->
+    <link href="http://careers.test/assets/libs/filepond-master/dist/filepond.css" rel="stylesheet" type="text/css" />
+    <link href="http://careers.test/assets/css/filepond-app.css" rel="stylesheet" type="text/css" />
+    <script src="http://careers.test/assets/libs/filepond-master/dist/filepond.min.js"></script>
+    <script src="http://careers.test/assets/libs/jquery-filepond-master/filepond.jquery.js"></script>
+    <script src="http://careers.test/assets/libs/filepond-master/dist/plugins/filepond-plugin-file-validate-type.js"></script>
+    <script src="http://careers.test/assets/libs/filepond-master/dist/plugins/filepond-plugin-file-validate-size.js"></script>
+<link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1750663589' data-turbolinks-eval='false' data-turbo-eval='false'><script src='/_debugbar/assets/javascript?v=1750663589' data-turbolinks-eval='false' data-turbo-eval='false'></script><script data-turbo-eval='false'>jQuery.noConflict(true);</script>
+<script> Sfdump = window.Sfdump || (function (doc) { doc.documentElement.classList.add('sf-js-enabled'); var rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '▼'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '▶'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').slice(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>▶</span>' : '<span>▼</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.slice(1); elt.className += ' sf-dump-hover'; elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>▶</span>'; } else { elt.innerHTML = '<span>▶</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '…'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> ▶</a></span>'; } } } catch (e) { } }; })(document); </script><style> .sf-js-enabled .phpdebugbar pre.sf-dump .sf-dump-compact, .sf-js-enabled .sf-dump-str-collapse .sf-dump-str-collapse, .sf-js-enabled .sf-dump-str-expand .sf-dump-str-expand { display: none; } .sf-dump-hover:hover { background-color: #B729D9; color: #FFF !important; border-radius: 2px; } .phpdebugbar pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } .phpdebugbar pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } .phpdebugbar pre.sf-dump .sf-dump-ellipsization { display: inline-flex; } .phpdebugbar pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } .phpdebugbar pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis-tail { flex-shrink: 0; } .phpdebugbar pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-hidden { display: none !important; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }.phpdebugbar pre.sf-dump, .phpdebugbar pre.sf-dump .sf-dump-default{word-wrap: break-word; white-space: pre-wrap; word-break: normal}.phpdebugbar pre.sf-dump .sf-dump-num{font-weight:bold; color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-const{font-weight:bold}.phpdebugbar pre.sf-dump .sf-dump-str{font-weight:bold; color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-note{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ref{color:#7B7B7B}.phpdebugbar pre.sf-dump .sf-dump-public{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-protected{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-private{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-meta{color:#B729D9}.phpdebugbar pre.sf-dump .sf-dump-key{color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-index{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ellipsis{color:#A0A000}.phpdebugbar pre.sf-dump .sf-dump-virtual{font-style:italic}.phpdebugbar pre.sf-dump .sf-dump-ns{user-select:none;}.phpdebugbar pre.sf-dump .sf-dump-ellipsis-note{color:#1299DA}</style>
+</head>
+
+
+    <body>
+        
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <style>
+    #home-navbar-container{
+        position: sticky;
+        top: 10px;
+        z-index: 100;
+        margin-bottom: -120px;
+    }
+    @media only screen and (max-width: 600px) {
+        #home-navbar-container{
+            margin-bottom: -150px;
+        }
+    }
+</style>
+<header id="header" class="navbar d-flex justify-content-between" style="z-index: 200">
+    <div class="container d-flex justify-content-between">
+        <div class="d-block d-md-flex gap-5 align-items-center justify-content-start">
+            <span class="navbar-links d-flex align-items-center text-light gap-1">
+                <i class='bx bxs-phone fs-5'></i>
+                <a href="tel:+63835525870" class="text-light text-decoration-none me-1">+63 83 5525870</a>
+            </span>
+            <span class="navbar-links d-flex align-items-center text-light gap-1">
+                <i class='bx bx-envelope fs-5' ></i>
+                <a href="mailto:bioseedphilippines@bioseed.com?subject=Your%20Subject" class="text-light text-decoration-none me-1">bioseedphilippines@bioseed.com</a>
+            </span>
+        </div>
+        <div class="d-lg-flex d-sm-none d-none gap-5 align-items-center justify-content-end">
+            <span class="navbar-links d-flex align-items-center text-light">
+                <i class='bx bx-book-content me-1 fs-5'></i>
+                <a href="https://www.bioseed.com.ph/" class="text-light text-decoration-none me-1">Bioseed Official </a>
+                |
+                <a href="https://www.dcmshriram.com/" class="text-light text-decoration-none ms-1">DCM Shriram Official </a>
+            </span>
+            <div class="d-flex gap-2 align-items-center justify-content-end">
+                <span class="navbar-links d-flex align-items-center text-light gap-1">
+                    <a href="https://www.facebook.com/BioseedResearchPhilippines/" class="text-light text-decoration-none me-1 fs-4"><i class='bx bxl-facebook-square' ></i></a>
+                </span>
+                <span class="navbar-links d-flex align-items-center text-light gap-1">
+                    <a href="https://www.linkedin.com/company/bioseed-research-philippines-inc." class="text-light text-decoration-none me-1 fs-4"><i class='bx bxl-linkedin-square' ></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse " id="navbarSearch-sm">
+            <div class="search-container-sm d-flex align-items-center justify-content-center">
+                <input type="text" class="form-control form-control-sm ps-3 pe-3 " placeholder="Search" aria-label="Search" style="border-radius: 11px; width: clamp(30vw, 576px, 80vw);">
+                <a href="#" style="margin-left: -40px; font-size: 1.4rem;">
+                    <i class='bx bx-search text-primary-color fw-bold mt-2'></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="home-navbar-container" class="">
+    <style>
+    ul.no-bullets {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        /* margin: 0; Remove margins */
+    }
+    .bg-blur {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Blur effect */
+    }
+    .navbar-items a{
+        text-decoration: none;
+        color: #ffffff; /* Default text color */
+        font-family: 'poppins-regular', sans-serif;
+        transition: color 0.3s ease;
+        padding: 0px 10px 5px 10px;
+    }
+    /* .navbar-items a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    } */
+     .link-hover a {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+    }
+    .link-hover a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: var(--accent-color);
+        height: 3px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .link-hover a:hover:before, .link-hover a:focus:before, .link-hover a:active:before {
+        right: 0;
+    }
+    .navbar-items-collapse, .navbar-items-collapse a{
+        width: 100%;
+        text-align: center;
+    }
+    #home-navbar {
+        margin-top: 10px;
+        padding: 30px 0px;
+        /* background-color: rgba(0, 0, 0, 0.226); */
+        backdrop-filter: blur(10px);
+    }
+    #home-navbar.scrolled {
+        /* background-color: #fff !important; */
+        background-color: rgba(22, 22, 22, 0.555);
+        backdrop-filter: blur(10px);
+        padding: 20px 40px;
+        top: 20px;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 13px;
+        transition: background-color 200ms linear;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #home-navbar.scrolled {
+            /* background-color: #fff !important; */
+            background-color: rgb(22, 22, 22);
+            /* backdrop-filter: blur(10px); */
+            padding: 10px 20px;
+            top: 20px;
+            border: 0px solid rgb(255, 255, 255);
+            border-radius: 0px;
+            transition: background-color 200ms linear;
+        }
+    }
+</style>
+<div class="container">
+    <div id="home-navbar" class="d-flex align-items-center justify-content-between flex-row w-100">
+        <a href="http://careers.test" class="text-decoration-none">
+            <p class="mb-0 fs-5 text-center poppins-bold text-shadow text-light">
+                <span class="text-primary-light">BIOSEED</span>
+                CAREERS
+            </p>
+        </a>
+        <ul class="no-bullets d-none align-items-center flex-row gap-4 mb-0 d-sm-none d-md-flex">
+            <li class="navbar-items link-hover">
+                <a href="http://careers.test">Home</a>
+            </li>
+            <li class="navbar-items link-hover">
+                <a href="http://careers.test/jobs#jobs">Jobs</a>
+            </li>
+            <li class="navbar-items link-hover">
+                <a href="http://careers.test">Tracker</a>
+            </li>
+            <li class="navbar-items link-hover">
+                <a href="http://careers.test">About</a>
+            </li>
+            <li class="navbar-items link-hover">
+                <a href="http://careers.test">Privacy</a>
+            </li>
+        </ul>
+        <p class="d-inline-flex gap-1 d-flex d-sm-flex d-md-none mb-0">
+            <button class="btn btn-light waves-effect fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-controls="navbarCollapse">
+                <i class="bx bx-menu"></i>
+            </button>
+        </p>
+    </div>
+    <div class="collapse position-relative" id="navbarCollapse">
+        <div class="position-absolute w-100 d-sm-flex d-md-none" style="z-index: 1000;">
+            <ul class="no-bullets bg-blur d-flex align-items-center flex-column gap-5 mb-0 p-5">
+                <li class="navbar-items navbar-items-collapse link-hover">
+                    <a href="http://careers.test">Home</a>
+                </li>
+                <li class="navbar-items navbar-items-collapse link-hover">
+                    <a href="http://careers.test/jobs">Jobs</a>
+                </li>
+                <li class="navbar-items navbar-items-collapse link-hover">
+                    <a href="http://careers.test">Tracker</a>
+                </li>
+                <li class="navbar-items navbar-items-collapse link-hover">
+                    <a href="http://careers.test">About</a>
+                </li>
+                <li class="navbar-items navbar-items-collapse link-hover">
+                    <a href="http://careers.test">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $("#home-navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+</div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                
+    <section>
+        <style>
+    .hero-banner {
+        background: #00153360 url('http://careers.test/assets/images/hero-bg-image-layer-bottom.webp') no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-banner {
+        position: relative;
+        /* height: 80vh; */
+        overflow: hidden;
+        perspective: 1px;
+        transform-style: preserve-3d;
+    }
+
+    .parallax-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        will-change: transform;
+    }
+
+
+    .layer-back {
+        background: #ffbb001f url('http://careers.test/assets/images/hero-bg-image-layer-mid.webp') no-repeat;
+        /* background-blend-mode: darken; */
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(-2px) scale(3);
+        z-index: 1;
+    }
+
+    .layer-mid {
+        background: #0000007e url('http://careers.test/assets/images/hero-bg-image-layer-top.webp') no-repeat;
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(-1px) scale(2);
+        z-index: 2;
+    }
+
+    .layer-front {
+        position: relative;
+        z-index: 3;
+        transform: translateZ(0);
+    }
+</style>
+<div class="hero-banner d-flex flex-column justify-content-center align-items-top text-light gap-3 ">
+    <div class="parallax-layer layer-back bg-hero-banner h-100"></div>
+    <div class="parallax-layer layer-mid"></div>
+    <div class="parallax-layer layer-front position-relative">
+        <div class="position-sticky top-0">
+            
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-column gap-3 h-100 ">
+            <div class="d-flex flex-column align-items-center-justify-content-center">
+                <h1 class="text-center poppins-bold text-shadow"><span class="text-primary-light">BIOSEED</span> CAREERS</h1>
+                <p class="text-center poppins-regular text-shadow">Planting the Seeds of Growth: Cultivating Your Future with Us.</p>
+            </div>
+            <span class="text-center">
+                <a href="#bioseed-careers" class="btn poppins-medium btn-branding-primary rounded-pill fs-6 ps-5 pe-5">
+    <i class=" "></i>
+    Learn More
+</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('scroll', function () {
+        const scrolled = window.pageYOffset;
+        document.querySelector('.layer-back').style.transform = `translateY(${scrolled * 0.2}px)`;
+        document.querySelector('.layer-mid').style.transform = `translateY(${scrolled * 0.5}px)`;
+    });
+</script>
+    </section>
+    <section class="mt-5">
+        <style>
+    #posting-info-body h3{
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: #252525;
+        margin-top: 10px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="poppins-bold text-primary-color">Accounting Assistant</h2>
+            <h5 class="text-muted ">Will be assigned in <span class="text-decoration-underline">General Santos Main Office</span></h5>
+            <h5 class="text-muted mb-0  ">Office Based</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-12"></div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+            <div class="mt-5">
+                <p class="poppins-bold text-muted font-size-18 mb-0">Qualifications:</p>
+                <ul>
+                                            <li class="card-text pb-0 font-size-18">Has a degree in Accountancy or related course</li>
+                                            <li class="card-text pb-0 font-size-18">Has experience in Tax Compliance</li>
+                                            <li class="card-text pb-0 font-size-18">With excellent verbal and written communication</li>
+                                            <li class="card-text pb-0 font-size-18">Computer Literate</li>
+                                            <li class="card-text pb-0 font-size-18">Fresh graduates are welcome to apply</li>
+                                    </ul>
+            </div>
+            <div class="mt-5">
+                <p class="poppins-regular text-muted font-size-18 mb-0"></p>
+                <span id="posting-info-body" class="poppins-regular">
+                    
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-12"></div>
+    </div>
+</div>
+    </section>
+    <section class="mt-5">
+        <style>
+    #application-form {
+        max-width: 80vw;
+        margin: auto;
+    }
+    #application-form {
+        width: 80vw;
+    }
+    @media (min-width:768px) {
+        #application-form {
+            width: 40vw;
+        }
+    }
+    .filepond--panel-root {
+        width: 100%;
+        /* height: 100%; */
+        background-color: white;
+    }
+    .filepond--root {
+        height: clamp(100px, 30vh, 150px);
+    }
+
+</style>
+<div class="container" id="job-application-form-section">
+    <div class="row">
+        <div class="col d-flex flex-column justify-content-center align-items-center bg-subtle-light pt-5 pb-5 gap-4">
+            <div id="form-container">
+                <h3 class="fs-2 poppins-semibold text-primary-color text-center">Application Form</h3>
+                <form id="application-form" action="http://careers.test/apply-position/J2508hyRw04/submit" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_token" value="Jm1ZGuIbKAsWUew9QnoCL2TdQxWkKUuJZ2DPiWny" autocomplete="off">                    <div class="container-fluids">
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-2">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstname" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-2">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-2">
+                                <label for="middleName">Middle name</label>
+                                <input type="text" class="form-control" id="middleName" name="middlename">
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-2">
+                                <label for="suffix">Suffix (if applicable)</label>
+                                <select class="form-select" name="suffix" id="suffix">
+                                    <option value="" selected disabled>Select</option>
+                                    <option value="">Not Applicable</option>
+                                                                            <option value="Jr.">Jr.</option>
+                                                                            <option value="Sr.">Sr.</option>
+                                                                            <option value="II">II</option>
+                                                                            <option value="III">III</option>
+                                                                            <option value="IV">IV</option>
+                                                                            <option value="V">V</option>
+                                                                    </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="dateOfBirth">Date of Birth</label>
+                                <input type="date" class="form-control" id="dateOfBirth" name="birthdate" required>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="gender">Sex</label>
+                                <select class="form-select" name="gender" id="gender">
+                                    <option value="" selected disabled>Select</option>
+                                                                            <option value="g2506503ed43d3a75f23108bdadd4c288f7002">female</option>
+                                                                            <option value="g2506c331b2124fe7a14ebfcf5d12acbbe0001">male</option>
+                                                                            <option value="g250617c49da79e2ebf7e246d5a737822f5003">not specified</option>
+                                                                    </select>
+                            </div>
+                            <div class="col">
+                                <label for="bloodType">Blood type (optional)</label>
+                                <select class="form-select" name="bloodtype" id="bloodType">
+                                    <option value="" selected disabled>Select</option>
+                                                                            <option value="bt25066cc86d8ae49d4110bb0c31883d43a7001">A+</option>
+                                                                            <option value="bt2506bc709140f9fad01e21fe99069e74b7002">A-</option>
+                                                                            <option value="bt250609ae6132338aa1265e35b2410d1a60003">B+</option>
+                                                                            <option value="bt2506e60eb49fd5631ceba5890340bc920d004">B-</option>
+                                                                            <option value="bt25063f0717da53a512a42d689731fc2a5c005">O+</option>
+                                                                            <option value="bt25067aab9a4efd75baa17e881e5b48e8e8006">O-</option>
+                                                                            <option value="bt2506b4ebf0f78f3617e8fde821b64d85c4007">AB+</option>
+                                                                            <option value="bt250614be1f0e51cd727919543a8ce4c5af008">AB-</option>
+                                                                    </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
+                                <label for="course">Course</label>
+                                <input type="text" class="form-control" id="course" name="course" placeholder="Bachelor of Science in ..." required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
+                                <label for="fieldOfStudy">Field of Study</label>
+                                <select class="form-select" name="field_of_study" id="fieldOfStudy">
+                                    <option value="" selected disabled>Select</option>
+                                                                            <option value="61ac2286c2629a6e17569d96910d6bc9e710e0f37460d84332e660e0787b73f2">Agriculture</option>
+                                                                            <option value="ecb338f55bcfd9fbcc0d8290b6864be64ea51d8861f9dabe5ece2efad5c0233f">Architecture</option>
+                                                                            <option value="6f20bfd9624726a137e2619a87464ce58d9d714a4e5618ec05e6ffff7de30b28">Arts and Humanities</option>
+                                                                            <option value="0fc8d316262107b729a863e961f08270d3bf0d867bd98f322aa681f2b4efe830">Business</option>
+                                                                            <option value="e2ac42509c679196aeb955d4643deface2650df776b7d437d6993fd9feb960f8">Criminology</option>
+                                                                            <option value="33d71eeba584477ab67f01bc9aa7c249d0eac1542e382243a5c41d28ef96bc13">Education</option>
+                                                                            <option value="67d8e33313bc0e1e412d28f0b0358935786c749e9f8a8fd8acdbbb19bb99f8da">Engineering</option>
+                                                                            <option value="18f64391cce424a79f69dc13d6b19e120e44380791c74931588cfa6f67cc970f">Healthcare</option>
+                                                                            <option value="92c2435767da3521b481b5d22c57831ea89fa95ac97b2f9a47949a7b64fc52cc">Hospitality</option>
+                                                                            <option value="6f53f89156578832c5885e8c083a0c4c99beb9f868c8c1b2e5a928084eb0ce4c">Information Technology</option>
+                                                                            <option value="48352430f3b07825044404284e0b231a812db58925218e2fcee582e8466defcb">Science</option>
+                                                                            <option value="ddb06e988a783616837c280d1742dbb95c297dcb26a740ac3d8f488aa760cbe9">Social Sciences</option>
+                                                                        <option value="" >Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="juan.delacruz@example.com" required>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <label for="phone">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="mobile_number" placeholder="09xx xxx xxxx" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="current_address">Current Address</label>
+                                <input type="text" class="form-control" id="current_address" name="curr_address" placeholder="Enter your current address" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="permanent_address" class=" mb-2">Permanent Address</label><br>
+                                <input class="form-check-input ms-2 " type="checkbox" id="sameAddress" name="same_address" value="1">
+                                <label for="sameAddress" class="ms-1 ">Same as current address</label><br>
+                                <input class="form-control mt-2" type="text" id="permanent_address" name="perm_address" placeholder="Enter your permanent address">
+                            </div>
+                        </div>
+
+                        
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="profilePhoto">2x2 Photo</label>
+                                <input type="file" class="form-control" id="profilePhoto" name="profile_photo" data-max-file-size="10MB" required>
+                                <input type="hidden" name="profilephoto_filename" id="profilephoto_filename" value="">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label for="resume">Resume (PDF)</label>
+                                <input type="file" class="form-control" id="resume" name="resume" data-max-file-size="3MB" required>
+                                <input type="hidden" name="resume_filename" id="resume_filename" value="">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label>
+                                    <input type="checkbox" class="form-check-input" id="privacyNoticeCheck" name="privacyNoticeCheck" required>
+                                    I confirm that I have read and understood the <a href="#" data-bs-toggle="modal" data-bs-target="#viewPrivacyNoticeModal">Privacy Notice</a> and agree to the collection and processing of my personal data for recruitment purposes.
+                                </label>
+                                <style>
+    #privacy-notice h3{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+</style>
+<div class="modal fade" id="viewPrivacyNoticeModal" tabindex="-1" aria-labelledby="viewPrivacyPolicyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="viewPrivacyPolicyLabel">Privacy Notice</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ps-5 pe-5 pt-3 pb-5">
+                <div id="privacy-notice" >
+                    <p class="mb-3"><strong>Bioseed Careers</strong> is committed to protecting your personal data in accordance with Republic Act No. 10173, also known as the <strong>Data Privacy Act of 2012</strong>.</p>
+
+                    <h3>1. What We Collect</h3>
+                    <p class="mb-1">We collect the following personal information when you apply for a job:</p>
+                    <ul>
+                        <li>Full name</li>
+                        <li>Contact details (email, phone number)</li>
+                        <li>Resume/CV</li>
+                        <li>Employment and educational history</li>
+                        <li>Other information relevant to recruitment</li>
+                    </ul>
+
+                    <h3>2. Purpose of Collection</h3>
+                    <p class="mb-1">Your data is collected for the purpose of:</p>
+                    <ul>
+                        <li>Evaluating your qualifications for employment</li>
+                        <li>Communicating with you regarding your application</li>
+                        <li>Maintaining records for future job opportunities</li>
+                    </ul>
+
+                    <h3>3. Data Sharing</h3>
+                    <p>Your data may be shared with authorized HR personnel and hiring managers. We do not share your data with third parties without your consent, unless required by law.</p>
+
+                    <h3>4. Data Retention</h3>
+                    <p>Your data will be retained for up to <strong>1 year</strong> unless you request its deletion earlier.</p>
+
+                    <h3>5. Your Rights</h3>
+                    <p class="mb-1">Under the Data Privacy Act, you have the right to:</p>
+                    <ul>
+                        <li>Access and correct your personal data</li>
+                        <li>Withdraw your consent</li>
+                        <li>Object to processing</li>
+                        <li>File a complaint with the National Privacy Commission</li>
+                    </ul>
+
+                    <h3>6. Security Measures</h3>
+                    <p>We implement appropriate technical and organizational measures to protect your data from unauthorized access, disclosure, or misuse.</p>
+                    <p>We use encryption, access controls, and secure servers to protect your data.</p>
+
+                    <h3>7. Contact Us</h3>
+                    <p class="mb-1">For any concerns, contact our Data Protection Officer:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:privacy@bioseedcareers.ph">privacy@bioseedcareers.ph</a></li>
+                        <li>Phone: +63 (xxx) xxx-xxxx</li>
+                    </ul>
+                </div>
+
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div id="privacy-consent-statement" class="row mt-3">
+                            <div class="col">
+                                <h3 class="poppins-medium fs-5">Consent to Data Collection and Processing</h3>
+                                <p>By submitting your application through Bioseed Careers, you acknowledge that you have read and understood our Privacy Notice, and you voluntarily give your explicit consent to the collection, use, and processing of your personal data for recruitment purposes.</p>
+                                <p class="mb-1">You understand that:</p>
+                                <ul>
+                                    <li>Your data will be used solely for evaluating your application and potential employment.</li>
+                                    <li>You may withdraw your consent at any time by contacting our Data Protection Officer.</li>
+                                    <li>Your data will be securely stored and retained for a limited period.</li>
+                                </ul>
+                                <label>
+                                    <input type="checkbox" class="form-check-input" id="consentCheck" name="consentCheck" required>
+                                    I agree to the collection and processing of my personal data as described in the Privacy Notice.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col text-center d-flex align-items-center justify-content-center gap-3">
+                                <div id="submit-spinner" class="spinner-border text-success" role="status" style="display: none;">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <button type="submit" id="btn_submit" class="btn btn-branding-primary waves-effect waves-light fs-6 ps-5 pe-5 rounded-pill">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <div id="response-block" class="" style="display: none">
+                <div class="flex-column d-flex align-items-center justify-content-center">
+                    <h3 class="text-primary-color " style="font-size: 100px"><i class="uil uil-check-circle"></i></h3>
+                    <h3 class="text-primary-color poppins-semibold text-center">Your Job Application <br> has successfully submitted!</h3>
+                    <p class="text-muted poppins-semibold mb-1 mt-3">Keep track of your application with reference number:</p>
+                    <p class="text-muted poppins-semibold fs-3"><span id="refNum"></span></p>
+                    <p class="text-muted poppins-semibold mb-2 mt-3">go back to</p>
+                    <a href="http://careers.test" class="btn ps-4 pe-4 btn-branding-primary rounded-pill">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    FilePond.registerPlugin(FilePondPluginFileValidateType);
+    FilePond.registerPlugin(FilePondPluginFileValidateSize);
+
+    const inputResume = document.querySelector('input[type="file"]#resume');
+    const inputProfilePhoto = document.querySelector('input[type="file"]#profilePhoto');
+    const csrfToken = ("Jm1ZGuIbKAsWUew9QnoCL2TdQxWkKUuJZ2DPiWny");
+
+    FilePond.create(inputResume, {
+        acceptedFileTypes: [
+            'application/pdf',
+            'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'application/vnd.ms-excel',
+            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+        ],
+        labelFileTypeNotAllowed: 'Only document files are allowed.',
+        fileValidateTypeLabelExpectedTypes: 'Expects {allButLastType} or {lastType}',
+        maxFileSize: '3MB', // Limit to 10 megabytes
+        labelMaxFileSizeExceeded: 'File is too large',
+        labelMaxFileSize: 'Maximum file size is {filesize}',
+    }).setOptions({
+        server: {
+            process: {
+                url: "http://careers.test/apply-position/file-upload",
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': csrfToken,
+                },
+                onload: (response) => {
+                    // This is the raw response from the server
+                    const res = JSON.parse(response);
+                    document.getElementById('resume_filename').value = res.filename;
+                    return res.filename;
+                    // console.log('Upload successful:', res);
+                },
+            },
+            headers: {
+                'X-CSRF-TOKEN': csrfToken,
+            },
+            onerror: (error) => {
+                console.error('Upload failed:', error);
+            },
+            revert: (uniqueFileId, load, error) => {
+                fetch(`/apply-position/destroy/${uniqueFileId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken,
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        document.getElementById('resume_filename').value = '';
+                        return response.json();
+                    } else {
+                        throw new Error('Failed to delete file');
+                    }
+                })
+                .then(data => {
+                    // console.log('File deleted:', data);
+                    load(); // Notify FilePond that deletion was successful
+                })
+                .catch(err => {
+                    console.error('Revert error:', err);
+                    error('Could not delete file');
+                });
+            }
+        },
+        onprocessfile: (error, file) => {
+            if (error) {
+                console.error('File upload error:', error);
+                return;
+            }
+            // console.log('File uploaded:', file.serverId); // serverId is usually the response or file ID
+        },
+    });
+
+    FilePond.create(inputProfilePhoto, {
+        acceptedFileTypes: ['image/jpeg', 'image/png', 'image/gif', 'image/webp'],
+        labelFileTypeNotAllowed: 'Only image files are allowed.',
+        fileValidateTypeLabelExpectedTypes: 'Expects {allButLastType} or {lastType}',
+        maxFileSize: '10MB', // Limit to 10 megabytes
+        labelMaxFileSizeExceeded: 'File is too large',
+        labelMaxFileSize: 'Maximum file size is {filesize}',
+    }).setOptions({
+        server: {
+            process: {
+                url: "http://careers.test/apply-position/photo-upload",
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': csrfToken,
+                },
+                onload: (response) => {
+                    // This is the raw response from the server
+                    const res = JSON.parse(response);
+                    document.getElementById('profilephoto_filename').value = res.photoFileName;
+                    return res.photoFileName;
+                    // console.log('Upload successful:', res.photoFileName);
+                },
+            },
+            headers: {
+                'X-CSRF-TOKEN': csrfToken,
+            },
+            onerror: (error) => {
+                console.error('Upload failed:', error);
+            },
+            revert: (uniqueFileId, load, error) => {
+                fetch(`/apply-position/destroy-photo/${uniqueFileId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken,
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        document.getElementById('profilephoto_filename').value = '';
+                        return response.json();
+                    } else {
+                        throw new Error('Failed to delete file');
+                    }
+                })
+                .then(data => {
+                    // console.log('File deleted:', data);
+                    load(); // Notify FilePond that deletion was successful
+                })
+                .catch(err => {
+                    console.error('Revert error:', err);
+                    error('Could not delete file');
+                });
+            }
+        },
+        onprocessfile: (error, file) => {
+            if (error) {
+                console.error('File upload error:', error);
+                return;
+            }
+            // console.log('File uploaded:', file.serverId); // serverId is usually the response or file ID
+        },
+    });
+
+    $(document).ready(function () {
+        $('#sameAddress').on('change', function() {
+            if ($(this).is(':checked')) {
+                $('#permanent_address').val($('#current_address').val());
+                $('#permanent_address').prop('disabled', true);
+            } else {
+                $('#permanent_address').val('');
+                $('#permanent_address').prop('disabled', false);
+            }
+        });
+    });
+
+    $('#application-form').on('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+        var privacyCheck = $(this).find('#privacyNoticeCheck');
+        var consentCheck = $(this).find('#consentCheck');
+
+        if (!privacyCheck.is(':checked')) {
+            alert('You must agree to the Privacy Notice.');
+            return;
+        }
+        if (!consentCheck.is(':checked')) {
+            alert('You must give consent for data collection and processing.');
+            return;
+        }
+
+        $(this).find('#btn_submit').prop('disabled', true);
+        $('#submit-spinner').show();
+
+        $.ajax({
+            url: $(this).attr('action'),
+            method: $(this).attr('method'),
+            data: $(this).serialize(), // Serialize form data
+            success: function(response) {
+                // Inject response into the HTML block
+                $('#form-container').remove();
+                $('#response-block').show();
+                $('#refNum').html(response.refNum);
+                $('#jobAppStatus').html(response.jobAppStatus);
+            },
+            error: function(xhr) {
+                $('#responseBlock').html('<p style="color:red;">Something went wrong.</p>');
+            }
+        });
+    });
+
+</script>
+    </section>
+    <section class="mt-5">
+        <style>
+    #bioseed-compound-banner {
+        background: #0000007c url('http://careers.test/assets/images/bioseed-compount-01.webp') no-repeat;
+        background-blend-mode: darken;
+        height: 40vh; /* for hover to work */
+        background-size: cover;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+</style>
+<div id="bioseed-compound-banner" class="d-flex flex-column justify-content-center align-items-center text-light gap-3 mt-5 ">
+    <div class="d-flex flex-column justify-content-center align-items-center ">
+        <h2 class="text-center poppins-bold text-shadow"><span class="text-primary-light">BIOSEED</span> CAREERS</h2>
+        <p class="text-center poppins-regular text-shadow">Planting the Seeds of Growth: Cultivating Your Future with Us.</p>
+    </div>
+    <span class="text-center">
+        <a href="#bioseed-careers" class="btn poppins-medium btn-branding-primary rounded-pill fs-6 ps-5 pe-5">
+    <i class=" "></i>
+    Apply Now
+</a>
+    </span>
+</div>
+    </section>
+
+            </div>
+            <!-- end main content-->
+
+            <footer class="footer bg-dark text-light pt-5 pb-4">
+    <div class="container">
+        <div class="row text-start">
+            <div class="col d-flex justify-content-start align-items-start flex-column ">
+                <a href="http://careers.test" class="text-decoration-none text-start">
+                    <p class="mb-0 fs-5 text-center poppins-bold text-shadow text-light">
+                        <span class="text-primary-light">BIOSEED</span>
+                        CAREERS
+                    </p>
+                </a>
+                <p class="poppins-regular">Learn more about us at <a href="http://www.bioseed.com.ph" target="_blank" rel="noopener noreferrer" class="text-accent-color">www.bioseed.com.ph</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr class="bg-light border border-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-between">
+                <script>document.write(new Date().getFullYear())</script> © Bioseed Research Philippines, Inc.
+                <div class="text-sm-end d-none d-sm-block">
+                    Powered by: Bioseed Information Management Systems
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- JAVASCRIPT -->
+        <!-- JAVASCRIPT -->
+
+ <script src="http://careers.test/assets/libs/bootstrap/bootstrap.min.js"></script>
+ <script src="http://careers.test/assets/libs/metismenu/metismenu.min.js"></script>
+ <script src="http://careers.test/assets/libs/simplebar/simplebar.min.js"></script>
+ <script src="http://careers.test/assets/libs/node-waves/node-waves.min.js"></script>
+ <script src="http://careers.test/assets/libs/waypoints/waypoints.min.js"></script>
+ <script src="http://careers.test/assets/libs/jquery-counterup/jquery-counterup.min.js"></script>
+
+ 
+ <!-- App js -->
+ <script src="http://careers.test/assets/js/app.min.js"></script>
+
+     <script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar({"theme":"auto","hideEmptyTabs":true});
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","order":-100,"title":"Request", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration","link":"timeline"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addIndicator("version", new PhpDebugBar.DebugBar.Indicator({"icon":"laravel phpdebugbar-fab"}), "right");
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelQueriesWidget()}));
+phpdebugbar.addTab("models", new PhpDebugBar.DebugBar.Tab({"icon":"cubes","title":"Models", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("currentrequest", new PhpDebugBar.DebugBar.Indicator({"icon":"share","link":"request"}), "right");
+phpdebugbar.setDataMap({
+"messages": ["messages.messages", []],
+"request": ["request.data", {}],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"version": ["laravel.version", ],
+"version:tooltip": ["laravel.tooltip", {}],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"models": ["models.data", {}],
+"models:badge": ["models.count", 0],
+"emails": ["symfonymailer_mails.mails", []],
+"emails:badge": ["symfonymailer_mails.count", null],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"request:badge": ["request.badge", null],
+"currentrequest": ["request.data.uri", ],
+"currentrequest:tooltip": ["request.tooltip", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.enableAjaxHandlerTab();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar, undefined, true);
+phpdebugbar.ajaxHandler.bindToFetch();
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"http:\/\/careers.test\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"01K72X11VQXATPJ75D2YB1ZS12","datetime":"2025-10-09 05:53:21","utime":1759960401.783479,"method":"GET","uri":"\/apply-position\/J2508hyRw04","ip":"127.0.0.1"},"messages":{"count":0,"messages":[]},"time":{"start":1759960401.611485,"end":1759960401.783489,"duration":0.17200398445129395,"duration_str":"172ms","measures":[{"label":"Booting","start":1759960401.611485,"relative_start":0,"end":1759960401.726127,"relative_end":1759960401.726127,"duration":0.11464190483093262,"duration_str":"115ms","memory":0,"memory_str":"0B","params":[],"collector":"time","group":null},{"label":"Application","start":1759960401.726135,"relative_start":0.11465001106262207,"end":1759960401.783491,"relative_end":1.9073486328125e-6,"duration":0.05735588073730469,"duration_str":"57.36ms","memory":0,"memory_str":"0B","params":[],"collector":"time","group":null},{"label":"Routing","start":1759960401.737914,"relative_start":0.12642908096313477,"end":1759960401.740104,"relative_end":1759960401.740104,"duration":0.0021898746490478516,"duration_str":"2.19ms","memory":0,"memory_str":"0B","params":[],"collector":null,"group":null},{"label":"Preparing Response","start":1759960401.763849,"relative_start":0.15236401557922363,"end":1759960401.782141,"relative_end":1759960401.782141,"duration":0.018291950225830078,"duration_str":"18.29ms","memory":0,"memory_str":"0B","params":[],"collector":null,"group":null},{"label":"View: apply-job-page","start":1759960401.765207,"relative_start":0.15372204780578613,"end":1759960401.765207,"relative_end":1759960401.765207,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.hero-banner","start":1759960401.765544,"relative_start":0.15405893325805664,"end":1759960401.765544,"relative_end":1759960401.765544,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.cta-md-button","start":1759960401.76785,"relative_start":0.15636491775512695,"end":1759960401.76785,"relative_end":1759960401.76785,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: apply-page-sections.job-posting-details-section","start":1759960401.768154,"relative_start":0.15666890144348145,"end":1759960401.768154,"relative_end":1759960401.768154,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: apply-page-sections.job-application-form-section","start":1759960401.777336,"relative_start":0.16585087776184082,"end":1759960401.777336,"relative_end":1759960401.777336,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.home.job-applications.view-privacy-notice-modal","start":1759960401.778709,"relative_start":0.16722393035888672,"end":1759960401.778709,"relative_end":1759960401.778709,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.career-banner-1","start":1759960401.779075,"relative_start":0.16758990287780762,"end":1759960401.779075,"relative_end":1759960401.779075,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.cta-md-button","start":1759960401.779391,"relative_start":0.1679060459136963,"end":1759960401.779391,"relative_end":1759960401.779391,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.master_home","start":1759960401.77964,"relative_start":0.16815495491027832,"end":1759960401.77964,"relative_end":1759960401.77964,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.title-meta","start":1759960401.779956,"relative_start":0.168471097946167,"end":1759960401.779956,"relative_end":1759960401.779956,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.head-home","start":1759960401.780265,"relative_start":0.16878008842468262,"end":1759960401.780265,"relative_end":1759960401.780265,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.topbar-home","start":1759960401.780602,"relative_start":0.16911697387695312,"end":1759960401.780602,"relative_end":1759960401.780602,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.home-nav-bar-trans","start":1759960401.781047,"relative_start":0.16956210136413574,"end":1759960401.781047,"relative_end":1759960401.781047,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.footer-home","start":1759960401.78147,"relative_start":0.16998505592346191,"end":1759960401.78147,"relative_end":1759960401.78147,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.vendor-scripts","start":1759960401.781765,"relative_start":0.17027997970581055,"end":1759960401.781765,"relative_end":1759960401.781765,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"}]},"memory":{"peak_usage":24345752,"peak_usage_str":"23MB"},"exceptions":{"count":0,"exceptions":[]},"laravel":{"version":"12.x","tooltip":{"Laravel Version":"12.0.1","PHP Version":"8.3.17","Environment":"local","Debug Mode":"Enabled","URL":"careers.test","Timezone":"Asia\/Manila","Locale":"en"}},"views":{"count":15,"nb_templates":15,"templates":[{"name":"apply-job-page","param_count":null,"params":[],"start":1759960401.76517,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/apply-job-page.blade.phpapply-job-page","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-job-page.blade.php\u0026line=1","ajax":false,"filename":"apply-job-page.blade.php","line":"?"}},{"name":"home-page-sections.hero-banner","param_count":null,"params":[],"start":1759960401.765516,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/hero-banner.blade.phphome-page-sections.hero-banner","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fhero-banner.blade.php\u0026line=1","ajax":false,"filename":"hero-banner.blade.php","line":"?"}},{"name":"components.common-components.cta-md-button","param_count":null,"params":[],"start":1759960401.767819,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/cta-md-button.blade.phpcomponents.common-components.cta-md-button","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fcta-md-button.blade.php\u0026line=1","ajax":false,"filename":"cta-md-button.blade.php","line":"?"}},{"name":"apply-page-sections.job-posting-details-section","param_count":null,"params":[],"start":1759960401.768125,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.phpapply-page-sections.job-posting-details-section","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-page-sections%2Fjob-posting-details-section.blade.php\u0026line=1","ajax":false,"filename":"job-posting-details-section.blade.php","line":"?"}},{"name":"apply-page-sections.job-application-form-section","param_count":null,"params":[],"start":1759960401.777305,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-application-form-section.blade.phpapply-page-sections.job-application-form-section","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-page-sections%2Fjob-application-form-section.blade.php\u0026line=1","ajax":false,"filename":"job-application-form-section.blade.php","line":"?"}},{"name":"components.home.job-applications.view-privacy-notice-modal","param_count":null,"params":[],"start":1759960401.778678,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/home\/job-applications\/view-privacy-notice-modal.blade.phpcomponents.home.job-applications.view-privacy-notice-modal","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fhome%2Fjob-applications%2Fview-privacy-notice-modal.blade.php\u0026line=1","ajax":false,"filename":"view-privacy-notice-modal.blade.php","line":"?"}},{"name":"home-page-sections.career-banner-1","param_count":null,"params":[],"start":1759960401.779047,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/career-banner-1.blade.phphome-page-sections.career-banner-1","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fcareer-banner-1.blade.php\u0026line=1","ajax":false,"filename":"career-banner-1.blade.php","line":"?"}},{"name":"components.common-components.cta-md-button","param_count":null,"params":[],"start":1759960401.779362,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/cta-md-button.blade.phpcomponents.common-components.cta-md-button","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fcta-md-button.blade.php\u0026line=1","ajax":false,"filename":"cta-md-button.blade.php","line":"?"}},{"name":"layouts.master_home","param_count":null,"params":[],"start":1759960401.779614,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/master_home.blade.phplayouts.master_home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Fmaster_home.blade.php\u0026line=1","ajax":false,"filename":"master_home.blade.php","line":"?"}},{"name":"layouts.title-meta","param_count":null,"params":[],"start":1759960401.779929,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/title-meta.blade.phplayouts.title-meta","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Ftitle-meta.blade.php\u0026line=1","ajax":false,"filename":"title-meta.blade.php","line":"?"}},{"name":"layouts.head-home","param_count":null,"params":[],"start":1759960401.780238,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/head-home.blade.phplayouts.head-home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Fhead-home.blade.php\u0026line=1","ajax":false,"filename":"head-home.blade.php","line":"?"}},{"name":"layouts.topbar-home","param_count":null,"params":[],"start":1759960401.780574,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/topbar-home.blade.phplayouts.topbar-home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Ftopbar-home.blade.php\u0026line=1","ajax":false,"filename":"topbar-home.blade.php","line":"?"}},{"name":"components.common-components.home-nav-bar-trans","param_count":null,"params":[],"start":1759960401.781019,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/home-nav-bar-trans.blade.phpcomponents.common-components.home-nav-bar-trans","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fhome-nav-bar-trans.blade.php\u0026line=1","ajax":false,"filename":"home-nav-bar-trans.blade.php","line":"?"}},{"name":"layouts.footer-home","param_count":null,"params":[],"start":1759960401.781443,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/footer-home.blade.phplayouts.footer-home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Ffooter-home.blade.php\u0026line=1","ajax":false,"filename":"footer-home.blade.php","line":"?"}},{"name":"layouts.vendor-scripts","param_count":null,"params":[],"start":1759960401.781739,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/vendor-scripts.blade.phplayouts.vendor-scripts","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Fvendor-scripts.blade.php\u0026line=1","ajax":false,"filename":"vendor-scripts.blade.php","line":"?"}}]},"queries":{"count":8,"nb_statements":8,"nb_visible_statements":8,"nb_excluded_statements":0,"nb_failed_statements":0,"accumulated_duration":0.00486,"accumulated_duration_str":"4.86ms","memory_usage":0,"memory_usage_str":null,"statements":[{"sql":"select * from `job_postings` where `reference_number` = \u0027J2508hyRw04\u0027 and `status_id` = \u0027stat-2001\u0027 limit 1","type":"query","params":[],"bindings":["J2508hyRw04","stat-2001"],"hints":null,"show_copy":true,"backtrace":[{"index":17,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":39},{"index":18,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php","line":47},{"index":19,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":266},{"index":20,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":212},{"index":21,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php","line":808}],"start":1759960401.750003,"duration":0.00189,"duration_str":"1.89ms","memory":0,"memory_str":null,"filename":"HomeController.php:39","source":{"index":17,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":39},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=39","ajax":false,"filename":"HomeController.php","line":"39"},"connection":"careers","explain":null,"start_percent":0,"width_percent":38.889},{"sql":"select * from `genders` order by `gender` asc","type":"query","params":[],"bindings":[],"hints":null,"show_copy":true,"backtrace":[{"index":15,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":40},{"index":16,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php","line":47},{"index":17,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":266},{"index":18,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":212},{"index":19,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php","line":808}],"start":1759960401.7540898,"duration":0.00039,"duration_str":"390\u03bcs","memory":0,"memory_str":null,"filename":"HomeController.php:40","source":{"index":15,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":40},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=40","ajax":false,"filename":"HomeController.php","line":"40"},"connection":"careers","explain":null,"start_percent":38.889,"width_percent":8.025},{"sql":"select * from `blood_types`","type":"query","params":[],"bindings":[],"hints":null,"show_copy":true,"backtrace":[{"index":18,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":41},{"index":19,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php","line":47},{"index":20,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":266},{"index":21,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":212},{"index":22,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php","line":808}],"start":1759960401.75601,"duration":0.00053,"duration_str":"530\u03bcs","memory":0,"memory_str":null,"filename":"HomeController.php:41","source":{"index":18,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":41},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=41","ajax":false,"filename":"HomeController.php","line":"41"},"connection":"careers","explain":null,"start_percent":46.914,"width_percent":10.905},{"sql":"select * from `field_of_studies` where `is_active` = 1 and `is_public` = 1 order by `title` asc","type":"query","params":[],"bindings":[1,1],"hints":null,"show_copy":true,"backtrace":[{"index":15,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":42},{"index":16,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php","line":47},{"index":17,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":266},{"index":18,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php","line":212},{"index":19,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php","line":808}],"start":1759960401.75799,"duration":0.00039,"duration_str":"390\u03bcs","memory":0,"memory_str":null,"filename":"HomeController.php:42","source":{"index":15,"namespace":null,"name":"app\/Http\/Controllers\/HomeController.php","file":"C:\\laragon\\www\\careers\\app\\Http\\Controllers\\HomeController.php","line":42},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=42","ajax":false,"filename":"HomeController.php","line":"42"},"connection":"careers","explain":null,"start_percent":57.819,"width_percent":8.025},{"sql":"select * from `area_of_assignments` where `area_of_assignments`.`id` = \u0027aoa-25031921001\u0027 and `area_of_assignments`.`id` is not null limit 1","type":"query","params":[],"bindings":["aoa-25031921001"],"hints":null,"show_copy":true,"backtrace":[{"index":21,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":14},{"index":23,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php","line":124},{"index":24,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php","line":58},{"index":25,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php","line":75},{"index":26,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php","line":209}],"start":1759960401.7702,"duration":0.00047999999999999996,"duration_str":"480\u03bcs","memory":0,"memory_str":null,"filename":"apply-page-sections.job-posting-details-section:14","source":{"index":21,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":14},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-page-sections%2Fjob-posting-details-section.blade.php\u0026line=14","ajax":false,"filename":"job-posting-details-section.blade.php","line":"14"},"connection":"careers","explain":null,"start_percent":65.844,"width_percent":9.877},{"sql":"select * from `job_types` where `job_types`.`id` = \u0027jt101\u0027 and `job_types`.`id` is not null limit 1","type":"query","params":[],"bindings":["jt101"],"hints":null,"show_copy":true,"backtrace":[{"index":22,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":15},{"index":24,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php","line":124},{"index":25,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php","line":58},{"index":26,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php","line":75},{"index":27,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php","line":209}],"start":1759960401.772053,"duration":0.00039,"duration_str":"390\u03bcs","memory":0,"memory_str":null,"filename":"apply-page-sections.job-posting-details-section:15","source":{"index":22,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":15},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-page-sections%2Fjob-posting-details-section.blade.php\u0026line=15","ajax":false,"filename":"job-posting-details-section.blade.php","line":"15"},"connection":"careers","explain":null,"start_percent":75.72,"width_percent":8.025},{"sql":"select * from `qualifications` where `qualifications`.`job_posting_id` = \u0027job-25080711009\u0027 and `qualifications`.`job_posting_id` is not null","type":"query","params":[],"bindings":["job-25080711009"],"hints":null,"show_copy":true,"backtrace":[{"index":20,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":24},{"index":22,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php","line":124},{"index":23,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php","line":58},{"index":24,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php","line":75},{"index":25,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php","line":209}],"start":1759960401.773937,"duration":0.00043,"duration_str":"430\u03bcs","memory":0,"memory_str":null,"filename":"apply-page-sections.job-posting-details-section:24","source":{"index":20,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":24},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-page-sections%2Fjob-posting-details-section.blade.php\u0026line=24","ajax":false,"filename":"job-posting-details-section.blade.php","line":"24"},"connection":"careers","explain":null,"start_percent":83.745,"width_percent":8.848},{"sql":"select * from `job_posting_infos` where `job_posting_infos`.`job_posting_id` = \u0027job-25080711009\u0027 limit 1","type":"query","params":[],"bindings":["job-25080711009"],"hints":null,"show_copy":true,"backtrace":[{"index":21,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":30},{"index":23,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php","line":124},{"index":24,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php","line":58},{"index":25,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php","line":75},{"index":26,"namespace":null,"name":"vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","file":"C:\\laragon\\www\\careers\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php","line":209}],"start":1759960401.775955,"duration":0.00035999999999999997,"duration_str":"360\u03bcs","memory":0,"memory_str":null,"filename":"apply-page-sections.job-posting-details-section:30","source":{"index":21,"namespace":"view","name":"apply-page-sections.job-posting-details-section","file":"C:\\laragon\\www\\careers\\resources\\views\/apply-page-sections\/job-posting-details-section.blade.php","line":30},"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fapply-page-sections%2Fjob-posting-details-section.blade.php\u0026line=30","ajax":false,"filename":"job-posting-details-section.blade.php","line":"30"},"connection":"careers","explain":null,"start_percent":92.593,"width_percent":7.407}]},"models":{"data":{"App\\Models\\FieldOfStudy":{"value":12,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FFieldOfStudy.php\u0026line=1","ajax":false,"filename":"FieldOfStudy.php","line":"?"}},"App\\Models\\BloodType":{"value":8,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FBloodType.php\u0026line=1","ajax":false,"filename":"BloodType.php","line":"?"}},"App\\Models\\Qualification":{"value":5,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FQualification.php\u0026line=1","ajax":false,"filename":"Qualification.php","line":"?"}},"App\\Models\\Gender":{"value":3,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FGender.php\u0026line=1","ajax":false,"filename":"Gender.php","line":"?"}},"App\\Models\\JobPosting":{"value":1,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FJobPosting.php\u0026line=1","ajax":false,"filename":"JobPosting.php","line":"?"}},"App\\Models\\AreaOfAssignment":{"value":1,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FAreaOfAssignment.php\u0026line=1","ajax":false,"filename":"AreaOfAssignment.php","line":"?"}},"App\\Models\\JobType":{"value":1,"xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FModels%2FJobType.php\u0026line=1","ajax":false,"filename":"JobType.php","line":"?"}}},"count":31,"is_counter":true},"symfonymailer_mails":{"count":0,"mails":[]},"gate":{"count":0,"messages":[]},"request":{"data":{"status":"200 OK","full_url":"http:\/\/careers.test\/apply-position\/J2508hyRw04","action_name":"home.apply.position","controller_action":"App\\Http\\Controllers\\HomeController@applyPositionPage","uri":"GET apply-position\/{ref}","controller":"App\\Http\\Controllers\\HomeController@applyPositionPage\u003Ca href=\u0022phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=36\u0022 class=\u0022phpdebugbar-widgets-editor-link\u0022\u003E\u003C\/a\u003E","file":"\u003Ca href=\u0022phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=36\u0022 onclick=\u0022\u0022 class=\u0022phpdebugbar-widgets-editor-link\u0022\u003Eapp\/Http\/Controllers\/HomeController.php:36-53\u003C\/a\u003E","middleware":"web","duration":"174ms","peak_memory":"24MB","response":"text\/html; charset=UTF-8","request_format":"html","request_query":"\u003Cpre class=sf-dump id=sf-dump-626885486 data-indent-pad=\u0022  \u0022\u003E[]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-626885486\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","request_request":"\u003Cpre class=sf-dump id=sf-dump-1377794951 data-indent-pad=\u0022  \u0022\u003E[]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-1377794951\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","request_headers":"\u003Cpre class=sf-dump id=sf-dump-1902162153 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:9\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003Ecookie\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u0022729 characters\u0022\u003Eperf_dv6Tr4n=1; XSRF-TOKEN=eyJpdiI6IlhRQmVtaXNNSlJHTEVidENEODFYMlE9PSIsInZhbHVlIjoibjZ4Y3VjdSsvRlBJRVlJV05KUUNGTDRMK3gzV2xvYkJ2S0ZDQ3czQ2djNCtuWkYwYVJKYmFIMVN2ZFNGb3l2TlB3dnAvY2JxVmVDNHZ2L2ZaYnNsejJZTVlVZXYvcUhlTE5mYU1ENWNuUmdUaFk0VExIbXFwd0dmcXhCWDhnSm8iLCJtYWMiOiI3MGIzNDMyOGQxZDYzNzhjYWFiOWY0ZDdiZmRkMTIxODFjMTkwMGYxZTM5MzA0NmVlY2VkMzI1YjdjMzVkNTM5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkMvVkRWd3Z5Tk9zQkY5K0piZkhaZVE9PSIsInZhbHVlIjoieUlUbjFoWjY4eHl2WE5Ea2t6aUdpOStPZW9jWFByUkIxYldTQnZhYUFvTXF1Tm5oL0NEVjdidTkzUFo1SnBleURoMk1LaE5wZGlvME1kT1BPNEl2TzhVQ1duM0k1UFNyZWROaDJyWkJkUG5td2tKaUd5T20vVW45QndpR1F0cWUiLCJtYWMiOiIxYmJmMjVhMGU3ZDg0Y2QzN2VlYzQ5ODc1NjA4MTM2NDgyZDViZDViNTYwNjZlYmYxNTM3MjBiZDM4ZWQxMTM2IiwidGFnIjoiIn0%3D\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eaccept-language\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002214 characters\u0022\u003Een-US,en;q=0.9\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eaccept-encoding\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002213 characters\u0022\u003Egzip, deflate\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Ereferer\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002224 characters\u0022\u003Ehttp:\/\/careers.test\/jobs\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eaccept\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u0022135 characters\u0022\u003Etext\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Euser-agent\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u0022111 characters\u0022\u003EMozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/141.0.0.0 Safari\/537.36\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eupgrade-insecure-requests\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str\u003E1\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Econnection\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u00225 characters\u0022\u003Eclose\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Ehost\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002212 characters\u0022\u003Ecareers.test\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-1902162153\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","request_cookies":"\u003Cpre class=sf-dump id=sf-dump-208961367 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:3\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003Eperf_dv6Tr4n\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-const\u003Enull\u003C\/span\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003EXSRF-TOKEN\u003C\/span\u003E\u0022 =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002240 characters\u0022\u003EJm1ZGuIbKAsWUew9QnoCL2TdQxWkKUuJZ2DPiWny\u003C\/span\u003E\u0022\n  \u0022\u003Cspan class=sf-dump-key\u003Elaravel_session\u003C\/span\u003E\u0022 =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002240 characters\u0022\u003EmEmWGozAbYMECzqhKt9jmyVOuiOCLpT2PFNW6aGH\u003C\/span\u003E\u0022\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-208961367\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","response_headers":"\u003Cpre class=sf-dump id=sf-dump-1024131309 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:3\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003Econtent-type\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002224 characters\u0022\u003Etext\/html; charset=UTF-8\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Ecache-control\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002217 characters\u0022\u003Eno-cache, private\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Edate\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002229 characters\u0022\u003EWed, 08 Oct 2025 21:53:21 GMT\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-1024131309\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","session_attributes":"\u003Cpre class=sf-dump id=sf-dump-964622076 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:4\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003E_token\u003C\/span\u003E\u0022 =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002240 characters\u0022\u003EJm1ZGuIbKAsWUew9QnoCL2TdQxWkKUuJZ2DPiWny\u003C\/span\u003E\u0022\n  \u0022\u003Cspan class=sf-dump-key\u003EPHPDEBUGBAR_STACK_DATA\u003C\/span\u003E\u0022 =\u003E []\n  \u0022\u003Cspan class=sf-dump-key\u003E_previous\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u0022\u003Cspan class=sf-dump-key\u003Eurl\u003C\/span\u003E\u0022 =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002246 characters\u0022\u003Ehttp:\/\/careers.test\/apply-position\/J2508sbvs04\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003E_flash\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:2\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u0022\u003Cspan class=sf-dump-key\u003Eold\u003C\/span\u003E\u0022 =\u003E []\n    \u0022\u003Cspan class=sf-dump-key\u003Enew\u003C\/span\u003E\u0022 =\u003E []\n  \u003C\/samp\u003E]\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-964622076\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n"},"tooltip":{"status":"200 OK","full_url":"http:\/\/careers.test\/apply-position\/J2508hyRw04","action_name":"home.apply.position","controller_action":"App\\Http\\Controllers\\HomeController@applyPositionPage"},"badge":null}}, "01K72X11VQXATPJ75D2YB1ZS12");
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+<title>    Bioseed Careers
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="Bioseed careers. Find a job that fits you" name="description" />
+<meta content="Bioseed Research Philippines, Inc." name="author" />
+<!-- App favicon -->
+<link rel="shortcut icon" href="./index_files/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+rel="stylesheet">
+
+
+<!-- Bootstrap Css -->
+<link href="./index_files/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="./index_files/icons.css" id="icons-style" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="./index_files/app-index.css" id="icons-style" rel="stylesheet" type="text/css" />
+<link href="./index_files/branding-buttons.css" id="icons-style" rel="stylesheet" type="text/css" />
+<link href="./index_files/font_poppins.css" id="icons-style" rel="stylesheet" type="text/css" />
+
+ </head>
+
+
+    <body>
+        
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <style>
+    #home-navbar-container{
+        position: sticky;
+        top: 10px;
+        z-index: 100;
+        margin-bottom: -120px;
+    }
+    @media only screen and (max-width: 600px) {
+        #home-navbar-container{
+            margin-bottom: -150px;
+        }
+    }
+</style>
+<header id="header" class="navbar d-flex justify-content-between" style="z-index: 200">
+    <div class="container d-flex justify-content-between">
+        <div class="d-block d-md-flex gap-5 align-items-center justify-content-start">
+            <span class="navbar-links d-flex align-items-center text-light gap-1">
+                <i class='bx bxs-phone fs-5'></i>
+                <a href="tel:+63835525870" class="text-light text-decoration-none me-1">+63 83 5525870</a>
+            </span>
+            <span class="navbar-links d-flex align-items-center text-light gap-1">
+                <i class='bx bx-envelope fs-5' ></i>
+                <a href="mailto:bioseedphilippines@bioseed.com?subject=Your%20Subject" class="text-light text-decoration-none me-1">bioseedphilippines@bioseed.com</a>
+            </span>
+        </div>
+        <div class="d-lg-flex d-sm-none d-none gap-5 align-items-center justify-content-end">
+            <span class="navbar-links d-flex align-items-center text-light">
+                <i class='bx bx-book-content me-1 fs-5'></i>
+                <a href="https://www.bioseed.com.ph/" class="text-light text-decoration-none me-1">Bioseed Official </a>
+                |
+                <a href="https://www.dcmshriram.com/" class="text-light text-decoration-none ms-1">DCM Shriram Official </a>
+            </span>
+            <div class="d-flex gap-2 align-items-center justify-content-end">
+                <span class="navbar-links d-flex align-items-center text-light gap-1">
+                    <a href="https://www.facebook.com/BioseedResearchPhilippines/" class="text-light text-decoration-none me-1 fs-4"><i class='bx bxl-facebook-square' ></i></a>
+                </span>
+                <span class="navbar-links d-flex align-items-center text-light gap-1">
+                    <a href="https://www.linkedin.com/company/bioseed-research-philippines-inc." class="text-light text-decoration-none me-1 fs-4"><i class='bx bxl-linkedin-square' ></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse " id="navbarSearch-sm">
+            <div class="search-container-sm d-flex align-items-center justify-content-center">
+                <input type="text" class="form-control form-control-sm ps-3 pe-3 " placeholder="Search" aria-label="Search" style="border-radius: 11px; width: clamp(30vw, 576px, 80vw);">
+                <a href="#" style="margin-left: -40px; font-size: 1.4rem;">
+                    <i class='bx bx-search text-primary-color fw-bold mt-2'></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="home-navbar-container" class="">
+    <style>
+    ul.no-bullets {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        /* margin: 0; Remove margins */
+    }
+    .bg-blur {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Blur effect */
+    }
+    .navbar-items a{
+        text-decoration: none;
+        color: #ffffff; /* Default text color */
+        font-family: 'poppins-regular', sans-serif;
+        transition: color 0.3s ease;
+        padding: 0px 10px 5px 10px;
+    }
+    /* .navbar-items a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    } */
+     .link-hover a {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+    }
+    .link-hover a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: var(--accent-color);
+        height: 3px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .link-hover a:hover:before, .link-hover a:focus:before, .link-hover a:active:before {
+        right: 0;
+    }
+    .navbar-items-collapse, .navbar-items-collapse a{
+        width: 100%;
+        text-align: center;
+    }
+    #home-navbar {
+        margin-top: 10px;
+        padding: 30px 0px;
+        /* background-color: rgba(0, 0, 0, 0.226); */
+        backdrop-filter: blur(10px);
+    }
+    #home-navbar.scrolled {
+        /* background-color: #fff !important; */
+        background-color: rgba(22, 22, 22, 0.555);
+        backdrop-filter: blur(10px);
+        padding: 20px 40px;
+        top: 20px;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 13px;
+        transition: background-color 200ms linear;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #home-navbar.scrolled {
+            /* background-color: #fff !important; */
+            background-color: rgb(22, 22, 22);
+            /* backdrop-filter: blur(10px); */
+            padding: 10px 20px;
+            top: 20px;
+            border: 0px solid rgb(255, 255, 255);
+            border-radius: 0px;
+            transition: background-color 200ms linear;
+        }
+    }
+</style>
+<div class="container">
+    <div id="home-navbar" class="d-flex align-items-center justify-content-between flex-row w-100">
+        <a href="#" class="text-decoration-none">
+            <p class="mb-0 fs-5 text-center poppins-bold text-shadow text-light">
+                <span class="text-primary-light">BIOSEED</span>
+                CAREERS
+            </p>
+        </a>
+        <ul class="no-bullets d-none align-items-center flex-row gap-4 mb-0 d-sm-none d-md-flex">
+            <li class="navbar-items link-hover">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="navbar-items link-hover">
+                <a href="./vacant-position.html#jobs">Jobs</a>
+            </li> 
+            <li class="navbar-items link-hover">
+                <a href="#about">About</a>
+            </li>
+            <li class="navbar-items link-hover">
+                <a href="./apply-position.html">Applicaiton Form</a>
+            </li>
+        </ul>
+        <p class="d-inline-flex gap-1 d-flex d-sm-flex d-md-none mb-0">
+            <button class="btn btn-light waves-effect fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-controls="navbarCollapse">
+                <i class="bx bx-menu"></i>
+            </button>
+        </p>
+    </div>
+    <div class="collapse position-relative" id="navbarCollapse">
+        <div class="position-absolute w-100 d-sm-flex d-md-none" style="z-index: 1000;">
+            <ul class="no-bullets bg-blur d-flex align-items-center flex-column gap-5 mb-0 p-5">
+                <li class="navbar-items link-hover">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="navbar-items link-hover">
+                    <a href="./vacant-position.html#jobs">Jobs</a>
+                </li> 
+                <li class="navbar-items link-hover">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navbar-items link-hover">
+                    <a href="./apply-position.html">Applicaiton Form</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $("#home-navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+</div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                
+    <section>
+        <style>
+    .hero-banner {
+        background: #00153360 url('./index_files/hero-bg-image-layer-bottom.webp') no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-banner {
+        position: relative;
+        /* height: 80vh; */
+        overflow: hidden;
+        perspective: 1px;
+        transform-style: preserve-3d;
+    }
+
+    .parallax-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        will-change: transform;
+    }
+
+
+    .layer-back {
+        background: #ffbb001f url('./index_files/hero-bg-image-layer-mid.webp') no-repeat;
+        /* background-blend-mode: darken; */
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(-2px) scale(3);
+        z-index: 1;
+    }
+
+    .layer-mid {
+        background: #0000007e url('./index_files/hero-bg-image-layer-top.webp') no-repeat;
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(-1px) scale(2);
+        z-index: 2;
+    }
+
+    .layer-front {
+        position: relative;
+        z-index: 3;
+        transform: translateZ(0);
+    }
+</style>
+<div class="hero-banner d-flex flex-column justify-content-center align-items-top text-light gap-3 ">
+    <div class="parallax-layer layer-back bg-hero-banner h-100"></div>
+    <div class="parallax-layer layer-mid"></div>
+    <div class="parallax-layer layer-front position-relative">
+        <div class="position-sticky top-0">
+            
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-column gap-3 h-100 ">
+            <div class="d-flex flex-column align-items-center-justify-content-center">
+                <h1 class="text-center poppins-bold text-shadow"><span class="text-primary-light">BIOSEED</span> CAREERS</h1>
+                <p class="text-center poppins-regular text-shadow">Planting the Seeds of Growth: Cultivating Your Future with Us.</p>
+            </div>
+            <span class="text-center">
+                <a href="#bioseed-careers" class="btn poppins-medium btn-branding-primary rounded-pill fs-6 ps-5 pe-5">
+    <i class=" "></i>
+    Learn More
+</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('scroll', function () {
+        const scrolled = window.pageYOffset;
+        document.querySelector('.layer-back').style.transform = `translateY(${scrolled * 0.2}px)`;
+        document.querySelector('.layer-mid').style.transform = `translateY(${scrolled * 0.5}px)`;
+    });
+</script>
+    </section>
+    <section>
+        <div class="bg-primary-color">
+    <div class="d-flex flex-column align-items-center justify-content-center p-3 pt-4 pb-4">
+        <h2 class="text-center poppins-bold text-light">View Open Positions</h2>
+        <p class="text-center poppins-regular text-light">We have <span class="text-warning">20</span> openings with <span class="text-warning">8</span> Office Based and <span class="text-warning">12</span> Field Based</p>
+        <div class="bg-primary-color">
+    <div id="job-posting-nav" class="d-flex align-items-center justify-content-center gap-5 flex-wrap">
+        <a href="./index_files/jobs#jobs" class="fs-5 nav-link-custom">All Open Position</a>
+        <a href="#" class="fs-5 nav-link-custom">Office Based</a>
+        <a href="#" class="fs-5 nav-link-custom">Field Based</a>
+    </div>
+</div>
+    </div>
+</div>
+    </section>
+    <section>
+        <div class="container pt-5 pb-5">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex flex-column align-items-center justify-content-center p-3 mt-5 pb-5">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="poppins-bold text-primary-color">Benefits</h2>
+                    <p class="poppins-regular">Perks of joining our team</p>
+                </div>
+                <div class=" " style=" ">
+                    <div id="benefits-container" class="gap-3  ">
+                        <div class="card border border-0 shadow card-benefits-1" id="card-benefits">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3 p-3 pt-5 pb-5 position-relative">
+                                <img class="card-icon" src="./index_files/icons/icon-incentives.png" alt="incentives" >
+                                <h3 class="fs-3 mb-0 text-primary-color poppins-bold">Incentives</h3>
+                                <p id="benefits-card-text" class="benefits-card-text-1 position-absolute align-items-center justify-content-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            </div>
+                        </div>
+                        <div class="card border border-0 shadow card-benefits-2" id="card-benefits">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3 p-3 pt-5 pb-5 position-relative">
+                                <img class="card-icon" src="./index_files/icons/icon-competitive-pay.png" alt="incentives">
+                                <h3 class="fs-3 mb-0 text-primary-color poppins-bold">Competitive Pay</h3>
+                                <p id="benefits-card-text" class="benefits-card-text-2 position-absolute p-3 align-items-center justify-content-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            </div>
+                        </div>
+                        <div class="card border border-0 shadow card-benefits-3" id="card-benefits">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3 p-3 pt-5 pb-5 position-relative">
+                                <img class="card-icon" src="./index_files/icons/icon-collaborative-culture.png" alt="incentives">
+                                <h3 class="fs-3 mb-0 text-primary-color poppins-bold">Collaborative Culture</h3>
+                                <p id="benefits-card-text" class="benefits-card-text-3 position-absolute p-3 align-items-center justify-content-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            </div>
+                        </div>
+                        <div class="card border border-0 shadow card-benefits-4" id="card-benefits">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3 p-3 pt-5 pb-5 position-relative">
+                                <img class="card-icon" src="./index_files/icons/icon-paid-holiday.png" alt="incentives">
+                                <h3 class="fs-3 mb-0 text-primary-color poppins-bold">Paid Holiday</h3>
+                                <p id="benefits-card-text" class="benefits-card-text-4 position-absolute p-3 align-items-center justify-content-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            </div>
+                        </div>
+                        <div class="card border border-0 shadow card-benefits-5" id="card-benefits">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3 p-3 pt-5 pb-5 position-relative">
+                                <img class="card-icon" src="./index_files/icons/icon-allowance.png" alt="incentives">
+                                <h3 class="fs-3 mb-0 text-primary-color poppins-bold">Allowance</h3>
+                                <p id="benefits-card-text" class="benefits-card-text-5 position-absolute p-3 align-items-center justify-content-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            </div>
+                        </div>
+                        <div class="card border border-0 shadow card-benefits-6" id="card-benefits">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3 p-3 pt-5 pb-5 position-relative">
+                                <img class="card-icon" src="./index_files/icons/icon-job-security.png" alt="incentives">
+                                <h3 class="fs-3 mb-0 text-primary-color poppins-bold">Job Security</h3>
+                                <p id="benefits-card-text" class="benefits-card-text-6 position-absolute p-3 align-items-center justify-content-center">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                    // for(let i=1; i < 7; i++){
+                    //     document.querySelector('.card-benefits-' + i).addEventListener('mouseover', () => {
+                    //         document.querySelector('.benefits-card-text-' + i).classList.remove("d-none");
+                    //     });
+
+                    //     document.querySelector('.card-benefits-' + i).addEventListener('mouseout', () => {
+                    //         document.querySelector('.benefits-card-text-' + i).classList.add("d-none");
+                    //     });
+                    // }
+                </script>
+            </div>
+
+        </div>
+    </div>
+</div>
+    </section>
+    <section id="bioseed-careers">
+        <style>
+    #grow-with-us {
+        background-image: url('./index_files/bg-02.svg');
+        background-size: cover;
+        background-position: center;
+        /* background-attachment: fixed; */
+        /* opacity: 0.6; */
+    }
+</style>
+<div id="grow-with-us" class="d-flex align-items-center justify-content-center mt-5 pt-5 pb-5">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-primary-color poppins-bold mb-0">Grow with us</h2>
+                        <p class="poppins-regular">Join our team.</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <p class="poppins-regular">
+                            It takes an innovative group of dedicated people working together to enable millions of trusted identities and secure customer interactions every day. See what it’s like to be part of a global team that finds purpose in solving some of the world’s most complex challenges.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <a href="#bioseed-careers" class="btn poppins-medium btn-branding-primary rounded-pill fs-6 ps-5 pe-5 fs-4">
+    <i class=" "></i>
+    Apply Now
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="row pb-5 pt-3">
+                    <div class="col">
+                        <img src="./index_files/img-grow-with-us.webp" alt="Grow with us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+        <style>
+    .rice-banner {
+        background: #0000003d url('./index_files/bg-rice-01.webp') no-repeat;
+        background-blend-mode: darken;
+        height: 80vh; /* for hover to work */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
+<div class="rice-banner d-flex flex-column justify-content-center align-items-center text-light gap-3">
+    <div class="d-flex bg-primary-color justify-content-center align-items-center w-100 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="mb-0 poppins-regular">Join our team</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="mb-0 poppins-bold">Harvest Success:</h2>
+                            <h2 class="mb-0 poppins-bold">Join the Team that Feeds the Nation.</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="poppins-regular">Find a current opening at Bioseed Careers in one of our many offices around the globe or look at one of our many remote or hybrid opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 align-items-center justify-content-center d-flex">
+                    <span class="text-center">
+                        <a href="./vacant-position.html#jobs" class="btn poppins-medium btn-light rounded-pill fs-6 ps-4 pe-4 text-primary-color">
+    <i class=" "></i>
+    View Open Jobs
+</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+        <div class="d-flex flex-column align-items-center justify-content-center mt-5 mb-0 pt-5 pb-5">
+    <h2 class=" mb-0 text-primary-color poppins-bold">ABOUT US</h2>
+    <p class="poppins-regular">Learn more about our company</p>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class=" d-flex align-items-center justify-content-center flex-column">
+                    <img src="./index_files/bioseed-logo-01.png" alt="Bioseed logo" class="img-fluid" style="width: auto; height: 250px;">
+                    <p class="poppins-regular fs-1 mb-0">BIOSEED</p>
+                    <p class="poppins-regular fs-4 text-dcm-color">Genetics for Improved Agriculture</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h3 class="poppins-medium">Bioseed Research Philippines, Inc.</h3>
+                
+                <p>
+                    Bioseed is one of the few biotechnology companies which have far ranging expertise across several areas including research and development, field and lab testing, data review, production, farm management and farmer interaction. It aims to empower farmers with high-yielding futuristic solutions, from hybrid breeds to better cultivation techniques.
+                </p>
+                <p>
+                    For further information please visit <a href="https://www.bioseed.com.ph" target='_blank' class="text-accent-color poppins-bold">www.bioseed.com.ph</a>
+                </p>
+                <p>
+                    Established in the year 1992, BIOSEED RESEARCH PHILIPPINES, INC. is today an upcoming company of international repute in the seed industry, with its core strength lying in delivering products that are “performance driven”.
+                </p>
+                <p>
+                    BIOSEED is committed and dedicated to improve the production efficiency of the agricultural community and help provide best possible hybrid seeds to produce quality products.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+        <style>
+    #internship-card {
+        width: 300px;
+        flex: none;
+        animation: scrollText 30s infinite linear;
+    }
+
+    #internship-container {
+        /* width: 90vw;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 10px 25px; */
+
+        width: 90vw;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        margin: 0;
+        padding: 10px 10vw 10px 10px;
+    }
+    @keyframes scrollText {
+        from {
+        transform: translateX(50%);
+        }
+        to {
+        transform: translateX(-300%);
+        }
+    }
+</style>
+<div class="d-flex flex-column align-items-center justify-content-center mt-5 mb-5 pt-5 pb-5">
+    <h2 class="poppins-bold text-primary-color mb-0">INTERNSHIP AT BIOSEED</h2>
+    <p class="poppins-regular">Intern Experiences at Bioseed</p>
+    <div id="internship-container" class=" gap-3 mt-4 faded faded-left faded-right">
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 0</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 1</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 2</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 3</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 4</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 5</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 6</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 7</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 8</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+                    <div class="p-3 border-3 rounded-3 border-primary-color shadow-sm" id="internship-card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h4 class="card-title poppins-regular text-primary-color">Angelo J. B. 9</h4>
+                    <h6 class="card-subtitle text-muted">Bachelor of Science in Biology</h6>
+                    <h6 class="card-subtitle mb-3 text-muted">Bicol University</h6>
+                    <p class="card-text text-dark">"The office was full of great moments too - counting seed, enjoying milk tea recipe, and having lunch breaks with my supervisors. Event though the work was quite a challenge, the support and teamwork made it easier."</p>
+                    <h6 class="card-subtitle mb-3 text-muted">Feb. 2024</h6>
+                </div>
+            </div>
+            </div>
+</div>
+    </section>
+    <section class="mt-5 ">
+        <style>
+    #bioseed-compound-banner {
+        background: #0000007c url('./index_files/bioseed-compount-01.webp') no-repeat;
+        background-blend-mode: darken;
+        height: 40vh; /* for hover to work */
+        background-size: cover;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+</style>
+<div id="bioseed-compound-banner" class="d-flex flex-column justify-content-center align-items-center text-light gap-3 mt-5 ">
+    <div class="d-flex flex-column justify-content-center align-items-center ">
+        <h2 class="text-center poppins-bold text-shadow"><span class="text-primary-light">BIOSEED</span> CAREERS</h2>
+        <p class="text-center poppins-regular text-shadow">Planting the Seeds of Growth: Cultivating Your Future with Us.</p>
+    </div>
+    <span class="text-center">
+        <a href="#bioseed-careers" class="btn poppins-medium btn-branding-primary rounded-pill fs-6 ps-5 pe-5">
+    <i class=" "></i>
+    Apply Now
+</a>
+    </span>
+</div>
+    </section>
+    <section>
+        <style>
+    .get-in-touch-bg {
+        background: #00000000 url('./index_files/bg-corn-vector.svg') no-repeat;
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+</style>
+
+<div class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 get-in-touch-bg">
+    <h2 class="poppins-bold text-primary-color mb-0 mt-5">GET IN TOUCH</h2>
+    <p class="poppins-regular">Connect with us by leaving a message.</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row d-none" id="query_container" >
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="./index_files/bioseed-logo-01.png" alt="Bioseed logo" class="img-fluid" style="width: auto; height: 250px;">
+                                <p class="poppins-regular text-dark fs-3 mb-0">Bioseed Research Philippines, Inc.</p>
+                                <p class="poppins-regular fs-5 text-dcm-color">Genetics for Improved Agriculture</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <h5><i class="bx bx-map-alt me-3"></i>National Highway, Katangawan, <br>General Santos City, Philippines - 9500</h5>
+                                <h5><i class="bx bx-envelope me-3"></i>bioseedphilippines@bioseed.com</h5>
+                                <h5><i class="bx bxs-phone me-3"></i>+63 83 5525870</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <h2>Feel free to ask a question here!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <iframe id="query_form" height="1000px" src="https://forms.cloud.microsoft/r/u2KZa5y01p?embed=true" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen style="width: clamp(35vw, 100%, 90vw)">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('query_form').ready(function(){
+        $('#query_container').removeClass('d-none');
+    });
+    console.log(videojs.getAllPlayers().length);
+</script>
+    </section>
+
+            </div>
+            <!-- end main content-->
+
+            <footer class="footer bg-dark text-light pt-5 pb-4">
+    <div class="container">
+        <div class="row text-start">
+            <div class="col d-flex justify-content-start align-items-start flex-column ">
+                <a href="#" class="text-decoration-none text-start">
+                    <p class="mb-0 fs-5 text-center poppins-bold text-shadow text-light">
+                        <span class="text-primary-light">BIOSEED</span>
+                        CAREERS
+                    </p>
+                </a>
+                <p class="poppins-regular">Learn more about us at <a href="http://www.bioseed.com.ph" target="_blank" rel="noopener noreferrer" class="text-accent-color">www.bioseed.com.ph</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr class="bg-light border border-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-between">
+                <script>document.write(new Date().getFullYear())</script> © Bioseed Research Philippines, Inc.
+                <div class="text-sm-end d-none d-sm-block">
+                    Powered by: Bioseed Information Management Systems
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- JAVASCRIPT -->
+        <!-- JAVASCRIPT -->
+
+ <script src="./index_files/bootstrap.min.js"></script>
+ <script src="./index_files/metismenu.min.js"></script>
+ <script src="./index_files/simplebar.min.js"></script>
+ <script src="./index_files/node-waves.min.js"></script>
+ <script src="./index_files/waypoints.min.js"></script>
+ <script src="./index_files/jquery-counterup.min.js"></script>
+
+ 
+ <!-- App js -->
+ <script src="./index_files/app.min.js"></script>
+
+     <script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar({"theme":"auto","hideEmptyTabs":true});
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","order":-100,"title":"Request", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration","link":"timeline"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addIndicator("version", new PhpDebugBar.DebugBar.Indicator({"icon":"laravel phpdebugbar-fab"}), "right");
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelQueriesWidget()}));
+phpdebugbar.addTab("models", new PhpDebugBar.DebugBar.Tab({"icon":"cubes","title":"Models", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("currentrequest", new PhpDebugBar.DebugBar.Indicator({"icon":"share","link":"request"}), "right");
+phpdebugbar.setDataMap({
+"messages": ["messages.messages", []],
+"request": ["request.data", {}],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"version": ["laravel.version", ],
+"version:tooltip": ["laravel.tooltip", {}],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"models": ["models.data", {}],
+"models:badge": ["models.count", 0],
+"emails": ["symfonymailer_mails.mails", []],
+"emails:badge": ["symfonymailer_mails.count", null],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"request:badge": ["request.badge", null],
+"currentrequest": ["request.data.uri", ],
+"currentrequest:tooltip": ["request.tooltip", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.enableAjaxHandlerTab();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar, undefined, true);
+phpdebugbar.ajaxHandler.bindToFetch();
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"http:\/\/careers.test\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"01K72WYMTW2S7E38FP3AJC3TD9","datetime":"2025-10-09 05:52:02","utime":1759960322.928841,"method":"GET","uri":"\/","ip":"127.0.0.1"},"messages":{"count":0,"messages":[]},"time":{"start":1759960311.966904,"end":1759960322.928857,"duration":10.961953163146973,"duration_str":"10.96s","measures":[{"label":"Booting","start":1759960311.966904,"relative_start":0,"end":1759960319.625331,"relative_end":1759960319.625331,"duration":7.658427000045776,"duration_str":"7.66s","memory":0,"memory_str":"0B","params":[],"collector":"time","group":null},{"label":"Application","start":1759960319.625345,"relative_start":7.658441066741943,"end":1759960322.928859,"relative_end":1.9073486328125e-6,"duration":3.303514003753662,"duration_str":"3.3s","memory":0,"memory_str":"0B","params":[],"collector":"time","group":null},{"label":"Routing","start":1759960320.4925,"relative_start":8.525596141815186,"end":1759960320.634924,"relative_end":1759960320.634924,"duration":0.1424238681793213,"duration_str":"142ms","memory":0,"memory_str":"0B","params":[],"collector":null,"group":null},{"label":"Preparing Response","start":1759960321.592075,"relative_start":9.625171184539795,"end":1759960322.808272,"relative_end":1759960322.808272,"duration":1.2161967754364014,"duration_str":"1.22s","memory":0,"memory_str":"0B","params":[],"collector":null,"group":null},{"label":"View: index","start":1759960321.690421,"relative_start":9.723517179489136,"end":1759960321.690421,"relative_end":1759960321.690421,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.hero-banner","start":1759960321.745739,"relative_start":9.77883505821228,"end":1759960321.745739,"relative_end":1759960321.745739,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.cta-md-button","start":1759960322.003991,"relative_start":10.037086963653564,"end":1759960322.003991,"relative_end":1759960322.003991,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.job-openings-banner","start":1759960322.016303,"relative_start":10.049399137496948,"end":1759960322.016303,"relative_end":1759960322.016303,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.job-posting-nav","start":1759960322.032073,"relative_start":10.065169095993042,"end":1759960322.032073,"relative_end":1759960322.032073,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.section-benefits","start":1759960322.074496,"relative_start":10.107592105865479,"end":1759960322.074496,"relative_end":1759960322.074496,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.section-grow-with-us","start":1759960322.119367,"relative_start":10.15246295928955,"end":1759960322.119367,"relative_end":1759960322.119367,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.cta-md-button","start":1759960322.219208,"relative_start":10.252304077148438,"end":1759960322.219208,"relative_end":1759960322.219208,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.career-banner","start":1759960322.220015,"relative_start":10.253111124038696,"end":1759960322.220015,"relative_end":1759960322.220015,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.cta-md-button-light","start":1759960322.318956,"relative_start":10.352051973342896,"end":1759960322.318956,"relative_end":1759960322.318956,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.section-about-us","start":1759960322.331165,"relative_start":10.364261150360107,"end":1759960322.331165,"relative_end":1759960322.331165,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.internship-at-bioseed","start":1759960322.348644,"relative_start":10.381740093231201,"end":1759960322.348644,"relative_end":1759960322.348644,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.career-banner-1","start":1759960322.363606,"relative_start":10.39670205116272,"end":1759960322.363606,"relative_end":1759960322.363606,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.cta-md-button","start":1759960322.466623,"relative_start":10.499719142913818,"end":1759960322.466623,"relative_end":1759960322.466623,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: home-page-sections.get-in-touch","start":1759960322.46716,"relative_start":10.500256061553955,"end":1759960322.46716,"relative_end":1759960322.46716,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.master_home","start":1759960322.49853,"relative_start":10.531625986099243,"end":1759960322.49853,"relative_end":1759960322.49853,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.title-meta","start":1759960322.548347,"relative_start":10.581443071365356,"end":1759960322.548347,"relative_end":1759960322.548347,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.head-home","start":1759960322.594337,"relative_start":10.627433061599731,"end":1759960322.594337,"relative_end":1759960322.594337,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.topbar-home","start":1759960322.635777,"relative_start":10.668873071670532,"end":1759960322.635777,"relative_end":1759960322.635777,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: components.common-components.home-nav-bar-trans","start":1759960322.72714,"relative_start":10.760236024856567,"end":1759960322.72714,"relative_end":1759960322.72714,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.footer-home","start":1759960322.751183,"relative_start":10.784279108047485,"end":1759960322.751183,"relative_end":1759960322.751183,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"},{"label":"View: layouts.vendor-scripts","start":1759960322.771,"relative_start":10.804095983505249,"end":1759960322.771,"relative_end":1759960322.771,"duration":0,"duration_str":"0\u03bcs","memory":0,"memory_str":"0B","params":[],"collector":"views","group":"View"}]},"memory":{"peak_usage":22401928,"peak_usage_str":"21MB"},"exceptions":{"count":0,"exceptions":[]},"laravel":{"version":"12.x","tooltip":{"Laravel Version":"12.0.1","PHP Version":"8.3.17","Environment":"local","Debug Mode":"Enabled","URL":"careers.test","Timezone":"Asia\/Manila","Locale":"en"}},"views":{"count":22,"nb_templates":22,"templates":[{"name":"index","param_count":null,"params":[],"start":1759960321.690377,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/index.blade.phpindex","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Findex.blade.php\u0026line=1","ajax":false,"filename":"index.blade.php","line":"?"}},{"name":"home-page-sections.hero-banner","param_count":null,"params":[],"start":1759960321.745683,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/hero-banner.blade.phphome-page-sections.hero-banner","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fhero-banner.blade.php\u0026line=1","ajax":false,"filename":"hero-banner.blade.php","line":"?"}},{"name":"components.common-components.cta-md-button","param_count":null,"params":[],"start":1759960322.00395,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/cta-md-button.blade.phpcomponents.common-components.cta-md-button","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fcta-md-button.blade.php\u0026line=1","ajax":false,"filename":"cta-md-button.blade.php","line":"?"}},{"name":"home-page-sections.job-openings-banner","param_count":null,"params":[],"start":1759960322.016265,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/job-openings-banner.blade.phphome-page-sections.job-openings-banner","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fjob-openings-banner.blade.php\u0026line=1","ajax":false,"filename":"job-openings-banner.blade.php","line":"?"}},{"name":"home-page-sections.job-posting-nav","param_count":null,"params":[],"start":1759960322.032028,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/job-posting-nav.blade.phphome-page-sections.job-posting-nav","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fjob-posting-nav.blade.php\u0026line=1","ajax":false,"filename":"job-posting-nav.blade.php","line":"?"}},{"name":"home-page-sections.section-benefits","param_count":null,"params":[],"start":1759960322.074458,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/section-benefits.blade.phphome-page-sections.section-benefits","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fsection-benefits.blade.php\u0026line=1","ajax":false,"filename":"section-benefits.blade.php","line":"?"}},{"name":"home-page-sections.section-grow-with-us","param_count":null,"params":[],"start":1759960322.119326,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/section-grow-with-us.blade.phphome-page-sections.section-grow-with-us","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fsection-grow-with-us.blade.php\u0026line=1","ajax":false,"filename":"section-grow-with-us.blade.php","line":"?"}},{"name":"components.common-components.cta-md-button","param_count":null,"params":[],"start":1759960322.219143,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/cta-md-button.blade.phpcomponents.common-components.cta-md-button","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fcta-md-button.blade.php\u0026line=1","ajax":false,"filename":"cta-md-button.blade.php","line":"?"}},{"name":"home-page-sections.career-banner","param_count":null,"params":[],"start":1759960322.219965,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/career-banner.blade.phphome-page-sections.career-banner","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fcareer-banner.blade.php\u0026line=1","ajax":false,"filename":"career-banner.blade.php","line":"?"}},{"name":"components.common-components.cta-md-button-light","param_count":null,"params":[],"start":1759960322.318902,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/cta-md-button-light.blade.phpcomponents.common-components.cta-md-button-light","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fcta-md-button-light.blade.php\u0026line=1","ajax":false,"filename":"cta-md-button-light.blade.php","line":"?"}},{"name":"home-page-sections.section-about-us","param_count":null,"params":[],"start":1759960322.33112,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/section-about-us.blade.phphome-page-sections.section-about-us","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fsection-about-us.blade.php\u0026line=1","ajax":false,"filename":"section-about-us.blade.php","line":"?"}},{"name":"home-page-sections.internship-at-bioseed","param_count":null,"params":[],"start":1759960322.348605,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/internship-at-bioseed.blade.phphome-page-sections.internship-at-bioseed","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Finternship-at-bioseed.blade.php\u0026line=1","ajax":false,"filename":"internship-at-bioseed.blade.php","line":"?"}},{"name":"home-page-sections.career-banner-1","param_count":null,"params":[],"start":1759960322.363566,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/career-banner-1.blade.phphome-page-sections.career-banner-1","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fcareer-banner-1.blade.php\u0026line=1","ajax":false,"filename":"career-banner-1.blade.php","line":"?"}},{"name":"components.common-components.cta-md-button","param_count":null,"params":[],"start":1759960322.466569,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/cta-md-button.blade.phpcomponents.common-components.cta-md-button","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fcta-md-button.blade.php\u0026line=1","ajax":false,"filename":"cta-md-button.blade.php","line":"?"}},{"name":"home-page-sections.get-in-touch","param_count":null,"params":[],"start":1759960322.467109,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/home-page-sections\/get-in-touch.blade.phphome-page-sections.get-in-touch","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fhome-page-sections%2Fget-in-touch.blade.php\u0026line=1","ajax":false,"filename":"get-in-touch.blade.php","line":"?"}},{"name":"layouts.master_home","param_count":null,"params":[],"start":1759960322.498491,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/master_home.blade.phplayouts.master_home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Fmaster_home.blade.php\u0026line=1","ajax":false,"filename":"master_home.blade.php","line":"?"}},{"name":"layouts.title-meta","param_count":null,"params":[],"start":1759960322.548298,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/title-meta.blade.phplayouts.title-meta","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Ftitle-meta.blade.php\u0026line=1","ajax":false,"filename":"title-meta.blade.php","line":"?"}},{"name":"layouts.head-home","param_count":null,"params":[],"start":1759960322.594299,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/head-home.blade.phplayouts.head-home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Fhead-home.blade.php\u0026line=1","ajax":false,"filename":"head-home.blade.php","line":"?"}},{"name":"layouts.topbar-home","param_count":null,"params":[],"start":1759960322.635738,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/topbar-home.blade.phplayouts.topbar-home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Ftopbar-home.blade.php\u0026line=1","ajax":false,"filename":"topbar-home.blade.php","line":"?"}},{"name":"components.common-components.home-nav-bar-trans","param_count":null,"params":[],"start":1759960322.727099,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/components\/common-components\/home-nav-bar-trans.blade.phpcomponents.common-components.home-nav-bar-trans","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Fcomponents%2Fcommon-components%2Fhome-nav-bar-trans.blade.php\u0026line=1","ajax":false,"filename":"home-nav-bar-trans.blade.php","line":"?"}},{"name":"layouts.footer-home","param_count":null,"params":[],"start":1759960322.751144,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/footer-home.blade.phplayouts.footer-home","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Ffooter-home.blade.php\u0026line=1","ajax":false,"filename":"footer-home.blade.php","line":"?"}},{"name":"layouts.vendor-scripts","param_count":null,"params":[],"start":1759960322.770959,"type":"blade","hash":"bladeC:\\laragon\\www\\careers\\resources\\views\/layouts\/vendor-scripts.blade.phplayouts.vendor-scripts","xdebug_link":{"url":"phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fresources%2Fviews%2Flayouts%2Fvendor-scripts.blade.php\u0026line=1","ajax":false,"filename":"vendor-scripts.blade.php","line":"?"}}]},"queries":{"count":0,"nb_statements":0,"nb_visible_statements":0,"nb_excluded_statements":0,"nb_failed_statements":0,"accumulated_duration":0,"accumulated_duration_str":"0\u03bcs","memory_usage":0,"memory_usage_str":null,"statements":[]},"models":{"data":[],"count":0,"is_counter":true},"symfonymailer_mails":{"count":0,"mails":[]},"gate":{"count":0,"messages":[]},"request":{"data":{"status":"200 OK","full_url":"http:\/\/careers.test","action_name":"home","controller_action":"App\\Http\\Controllers\\HomeController@index","uri":"GET \/","controller":"App\\Http\\Controllers\\HomeController@index\u003Ca href=\u0022phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=14\u0022 class=\u0022phpdebugbar-widgets-editor-link\u0022\u003E\u003C\/a\u003E","file":"\u003Ca href=\u0022phpstorm:\/\/open?file=C%3A%2Flaragon%2Fwww%2Fcareers%2Fapp%2FHttp%2FControllers%2FHomeController.php\u0026line=14\u0022 onclick=\u0022\u0022 class=\u0022phpdebugbar-widgets-editor-link\u0022\u003Eapp\/Http\/Controllers\/HomeController.php:14-16\u003C\/a\u003E","middleware":"web","duration":"10.96s","peak_memory":"40MB","response":"text\/html; charset=UTF-8","request_format":"html","request_query":"\u003Cpre class=sf-dump id=sf-dump-421456143 data-indent-pad=\u0022  \u0022\u003E[]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-421456143\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","request_request":"\u003Cpre class=sf-dump id=sf-dump-1468151812 data-indent-pad=\u0022  \u0022\u003E[]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-1468151812\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","request_headers":"\u003Cpre class=sf-dump id=sf-dump-926601269 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:8\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003Ecookie\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002214 characters\u0022\u003Eperf_dv6Tr4n=1\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eaccept-language\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002214 characters\u0022\u003Een-US,en;q=0.9\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eaccept-encoding\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002213 characters\u0022\u003Egzip, deflate\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eaccept\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u0022135 characters\u0022\u003Etext\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Euser-agent\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u0022111 characters\u0022\u003EMozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/141.0.0.0 Safari\/537.36\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Eupgrade-insecure-requests\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str\u003E1\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Econnection\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u00225 characters\u0022\u003Eclose\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Ehost\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002212 characters\u0022\u003Ecareers.test\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-926601269\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","request_cookies":"\u003Cpre class=sf-dump id=sf-dump-624206115 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003Eperf_dv6Tr4n\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-const\u003Enull\u003C\/span\u003E\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-624206115\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","response_headers":"\u003Cpre class=sf-dump id=sf-dump-1012258219 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:3\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003Econtent-type\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002224 characters\u0022\u003Etext\/html; charset=UTF-8\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Ecache-control\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002217 characters\u0022\u003Eno-cache, private\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n  \u0022\u003Cspan class=sf-dump-key\u003Edate\u003C\/span\u003E\u0022 =\u003E \u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=2 class=sf-dump-compact\u003E\n    \u003Cspan class=sf-dump-index\u003E0\u003C\/span\u003E =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002229 characters\u0022\u003EWed, 08 Oct 2025 21:52:01 GMT\u003C\/span\u003E\u0022\n  \u003C\/samp\u003E]\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-1012258219\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n","session_attributes":"\u003Cpre class=sf-dump id=sf-dump-691891335 data-indent-pad=\u0022  \u0022\u003E\u003Cspan class=sf-dump-note\u003Earray:1\u003C\/span\u003E [\u003Csamp data-depth=1 class=sf-dump-expanded\u003E\n  \u0022\u003Cspan class=sf-dump-key\u003E_token\u003C\/span\u003E\u0022 =\u003E \u0022\u003Cspan class=sf-dump-str title=\u002240 characters\u0022\u003EJm1ZGuIbKAsWUew9QnoCL2TdQxWkKUuJZ2DPiWny\u003C\/span\u003E\u0022\n\u003C\/samp\u003E]\n\u003C\/pre\u003E\u003Cscript\u003ESfdump(\u0022sf-dump-691891335\u0022, {\u0022maxDepth\u0022:0})\u003C\/script\u003E\n"},"tooltip":{"status":"200 OK","full_url":"http:\/\/careers.test","action_name":"home","controller_action":"App\\Http\\Controllers\\HomeController@index"},"badge":null}}, "01K72WYMTW2S7E38FP3AJC3TD9");
+
+</script>
+</body>
+
+</html>

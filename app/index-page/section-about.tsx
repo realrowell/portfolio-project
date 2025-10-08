@@ -28,7 +28,7 @@ export default function SectionAbout() {
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-emerald-300 ">Rowell Jay</span>
                     </h3>
                     <p className="text-white md:text-lg sm:text-md text-md  max-w-md text-justify">
-                        Hi! I’m a web developer with a designer’s eye and a storyteller’s mindset. My background in graphic design, photography, and videography helps me craft websites that are not only functional but visually compelling. I love turning ideas into interactive experiences that connect people and inspire creativity. Every project I take on is a chance to learn, experiment, and push boundaries in design and technology.
+                        I’m a web developer with a designer’s eye and a storyteller’s mindset. My background in graphic design, photography, and videography helps me craft websites that are not only functional but visually compelling. I love turning ideas into interactive experiences that connect people and inspire creativity. Every project I take on is a chance to learn, experiment, and push boundaries in design and technology.
                     </p> 
                     <Button variant="primary" onClick={() => setIsOpen(true)}>View Resume/CV</Button> 
                     {isOpen  && (

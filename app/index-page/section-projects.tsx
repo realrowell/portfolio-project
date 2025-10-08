@@ -12,7 +12,7 @@ const PortfolioProjects = [
         description: "This is Employee Leave Management System where customized to fit the needs of the company. The used of Laravel Framework offers the security, reliability, and scalability of the project where the project can be expanded in the future to add more features and module. In this project, I used PHP for the server side programming and Bootstrap, CSS, JavaScript, and JQuery for the front-end rendering.",
         imageUrl: "/images/projects/lms-001.png",
         featuredImages: ["/images/projects/lms-001.png","/images/projects/lms-002.png", "/images/projects/lms-003.png"],
-        projectUrl: "",
+        projectUrl: "/demo-page/ezleave/login.html",
         tags: ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
     },
     {
@@ -21,7 +21,7 @@ const PortfolioProjects = [
         description: "A web-based application that streamlines the recruitment process by allowing HR personnel to manage job postings, applications, and candidate evaluations.",
         imageUrl: "/images/projects/rms-003.png",
         featuredImages: ["/images/projects/rms-001.png","/images/projects/rms-002.png", "/images/projects/rms-003.png", "/images/projects/rms-004.png", "/images/projects/rms-005.png", "/images/projects/rms-006.png"],
-        projectUrl: "",
+        projectUrl: "/demo-page/careers/index.html",
         tags: ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
     },
     {
@@ -245,18 +245,19 @@ export default function SectionProjects( ){
 
                             <div className="flex justify-end gap-2">
                                 <button
-                                onClick={() => setActiveProject(null)}
-                                className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700"
+                                    onClick={() => setActiveProject(null)}
+                                    className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700"
                                 >
-                                Close
+                                    Close
                                 </button>
 
-                                <Link
-                                to={activeProject.projectUrl || "#"}
-                                className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800"
+                                <a
+                                    href={activeProject.projectUrl || "#"}
+                                    target="_blank"
+                                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800"
                                 >
-                                View page
-                                </Link>
+                                    Demo
+                                </a>
                             </div>
                         </div>
                     </div>
