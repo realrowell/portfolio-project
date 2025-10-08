@@ -3,6 +3,7 @@ import { useRef, useState, useEffect  } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Button from "../components/Button"; 
 
 const PortfolioProjects = [
     {
@@ -86,26 +87,47 @@ export default function SectionProjects( ){
         return () => window.removeEventListener("keydown", onKey);
     }, []); 
 
+    const [isOpen, setIsOpen] = useState(false); 
+    useEffect(() => {
+        if (activeProject) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        // cleanup when component unmounts
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [activeProject]);
+
     var settings = {
         dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  centerMode: true, // centers slide
-  centerPadding: "0px",
-  adaptiveHeight: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        centerMode: true, // centers slide
+        centerPadding: "0px",
+        adaptiveHeight: true,
     };
 
 
     return (
         <> 
-        <div className="bg-gradient-to-b from-[#150027] to-[#000000] text-white py-20">
+        <div className="bg-gradient-to-b from-[#000000] to-[#150027] text-white py-20">
             <div className="container flex flex-col items-center justify-center gap-10">
                 <div className="flex flex-col text-center ">
                 <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">
-                    Things I’ve Built & Loved
+                    Things I’ve{' '}
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400">
+                        Built
+                    </span>
+                    {' & '} 
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-teal-400">
+                        Loved
+                    </span>
                 </h3>
                 <p className="text-lg">Portfolio Highlights</p>
                 </div> 
@@ -148,29 +170,13 @@ export default function SectionProjects( ){
 
                             <p className="mb-3 poppins-regular text-sm text-gray-700 line-clamp-3">
                                 {project.description}
-                            </p>
-
-                            <button
-                            onClick={() => setActiveProject(project)}
-                            className="btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
-                            >
-                                Know more
-                                <svg
-                                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 14 10"
-                                >
-                                    <path
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                                    />
+                            </p> 
+                            <Button variant="primarySm" onClick={() => setActiveProject(project)}>
+                                Know more 
+                                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" >
+                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 ))}

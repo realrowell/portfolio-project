@@ -1,6 +1,21 @@
-import Button from "~/components/Button";
+import Button from "../components/Button";
+import { useState, useEffect  } from "react";  
 
 export default function SectionAbout() {
+    const [isOpen, setIsOpen] = useState(false); 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        // cleanup when component unmounts
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [isOpen]);
+
     return (
         <div className="container items-center bg-[#000000] ">
             <div className=" flex flex-col lg:flex-row md:flex-row sm:flex-col justify-between items-center gap-20"> 
@@ -9,13 +24,31 @@ export default function SectionAbout() {
                 </div>
                 <div className="flex flex-1 flex-col items-start justify-center gap-5">
                     <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">Hi, I'm Rowell Jay</h3>
-                    <p className="text-white md:text-lg sm:text-md text-md  max-w-md">
-                        I'm a passionate web developer and graphic designer with a knack for creating visually stunning and user-friendly digital experiences. With a background in both design and development, I bridge the gap between aesthetics and functionality.
-                    </p>
-                    <p className="text-white md:text-lg sm:text-md text-md max-w-md">
-                        Whether it's crafting responsive websites, designing logos, or developing interactive applications, I thrive on turning ideas into reality. Let's collaborate to bring your vision to life!
+                    <p className="text-white md:text-lg sm:text-md text-md  max-w-md text-justify">
+                        Hi! I’m a web developer with a designer’s eye and a storyteller’s mindset. My background in graphic design, photography, and videography helps me craft websites that are not only functional but visually compelling. I love turning ideas into interactive experiences that connect people and inspire creativity. Every project I take on is a chance to learn, experiment, and push boundaries in design and technology.
                     </p> 
-                    <Button variant="primary">Download CV</Button>
+                    <Button variant="primary" onClick={() => setIsOpen(true)}>View Resume/CV</Button> 
+                    {isOpen  && (
+                        <div
+                            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 md:p-5 sm:p-4 p-4"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <div
+                                className="bg-white container rounded-lg p-6 shadow-lg max-w-sm w-full flex flex-col gap-5"
+                                onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+                            >
+                                <iframe src="../../public/docs/resume_jay-real.pdf" className="w-full h-[80vh]" ></iframe>
+                                <div className="flex flex-col items-end">
+                                    <button
+                                        onClick={() => setIsOpen(false)}
+                                        className="px-4 py-2 bg-gray-800 text-white rounded cursor-pointer"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

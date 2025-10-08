@@ -19,7 +19,7 @@ const skillsTools = [
 
 export default function SectionTools() {
     return (
-        <div className="bg-gradient-to-b from-[#000000] to-[#150027] text-white py-10">
+        <div className="bg-gradient-to-b from-[#150027] to-[#000] text-white py-10">
             <div className="container flex flex-col items-center justify-center gap-10">
                 <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">Skills & Tools</h3>
                 {skillsTools.map((skillCategory) => ( 

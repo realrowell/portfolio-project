@@ -53,7 +53,12 @@ export default function SectionContact() {
     return (
         <div className="container items-center bg-[#000000] py-20">
             <div className="flex flex-col items-center justify-center">
-                <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold text-center">Let’s create something amazing together.</h3> 
+                <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold text-center">
+                    Let’s create something{' '}
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 uppercase">
+                        Amazing
+                    </span>
+                    {' '} together.</h3> 
                 <p className="text-lg">Contact me at</p>
             </div>
             <div className="flex md:flex-row sm:flex-col flex-col items-base justify-between gap-10 mt-20">
@@ -64,7 +69,7 @@ export default function SectionContact() {
                     <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">Get in touch</h3>
                     <div className="flex flex-col gap-5 text-start">
                         {contactInfos.map((info) => (
-                            <a key={info.title} href={info.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline gap-5 ">
+                            <a key={info.title} href={info.link} target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline gap-5 ">
                                 <i className="text-white ">{info.icon}</i>
                                 <div className="flex flex-col">
                                     <span className="text-white font-bold">{info.title}</span>
