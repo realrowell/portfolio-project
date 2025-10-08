@@ -37,7 +37,7 @@ export default function SectionAbout() {
                                 className="bg-white container rounded-lg p-6 shadow-lg max-w-sm w-full flex flex-col gap-5"
                                 onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
                             >
-                                <iframe src="../../public/docs/resume_jay-real.pdf" className="w-full h-[80vh]" ></iframe>
+                                <iframe src="/docs/resume_jay-real.pdf" className="w-full h-[80vh]" ></iframe>
                                 <div className="flex flex-col items-end">
                                     <button
                                         onClick={() => setIsOpen(false)}
