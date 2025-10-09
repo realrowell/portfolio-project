@@ -1,4 +1,5 @@
 @import "tailwindcss";  
+@import "tailwindcss-animated"; 
 @font-face {
   font-family: 'White Chick Font'; 
   /* The path is relative to the SCSS file */

@@ -23,14 +23,14 @@ export default function SectionAbout() {
                     <img src="/images/banner-001.png" alt="Profile Photo" className="object-contain md:object-cover aspect-square" />
                 </div>
                 <div className="flex flex-1 flex-col items-start justify-center gap-5">
-                    <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold ">
+                    <h3 className="text-white md:text-3xl sm:text-2xl text-2xl font-bold animate-fade-up animate-once animate-delay-200 animate-ease-in-out animate-normal">
                         Hi, I'm{' '} 
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-emerald-300 ">Rowell Jay</span>
                     </h3>
-                    <p className="text-white md:text-lg sm:text-md text-md text-white max-w-md text-justify">
+                    <p className="text-white md:text-lg sm:text-md text-md max-w-md text-justify animate-fade-up animate-delay-300 animate-ease-in-out">
                         A web developer with a designer’s eye and a storyteller’s mindset. My background in graphic design, photography, and videography helps me craft websites that are not only functional but visually compelling. I love turning ideas into interactive experiences that connect people and inspire creativity. Every project I take on is a chance to learn, experiment, and push boundaries in design and technology.
                     </p> 
-                    <Button variant="primary" onClick={() => setIsOpen(true)}>View Resume/CV</Button> 
+                    <Button className="animate-fade-up animate-delay-400 animate-ease-in-out" variant="primary" onClick={() => setIsOpen(true)}>View Resume/CV</Button> 
                     {isOpen  && (
                         <div
                             className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 md:p-5 sm:p-4 p-4"

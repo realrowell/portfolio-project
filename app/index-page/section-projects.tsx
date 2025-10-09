@@ -35,7 +35,7 @@ const PortfolioProjects = [
     },
     {
         id: '4',
-        name: "Asset Tagging and Tracking System",
+        name: "Asset Tagging and Tracking System (Under Development)",
         description: "A web-based application that allows organizations to tag and track their assets, such as equipment and inventory, to improve asset management and reduce loss.",
         imageUrl: null,
         featuredImages: [],
@@ -44,7 +44,7 @@ const PortfolioProjects = [
     },
     {
         id: '5',
-        name: "Activity Attendance Monitoring System",
+        name: "Activity Attendance Monitoring System (Under Development)",
         description: "A web-based application that allows organizations to monitor and track attendance for events and activities, providing real-time data and reports.",
         imageUrl: null,
         featuredImages: [],
