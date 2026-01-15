@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "ezleave",
+    "title": "Leave Management System",
+    "description": "This is Employee Leave Management System where customized to fit the needs of the company. The used of Laravel Framework offers the security, reliability, and scalability of the project where the project can be expanded in the future to add more features and module. In this project, I used PHP for the server side programming and Bootstrap, CSS, JavaScript, and JQuery for the front-end rendering.",
+    "year": 2024,
+    "imageUrl": "/images/projects/lms-001.png",
+    "featuredImages": ["/images/projects/lms-001.png","/images/projects/lms-002.png","/images/projects/lms-003.png"],
+    "projectUrl": "/demo-page/ezleave/login.html",
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+  },
+  {
+    "slug": "rms-003",
+    "title": "Recruitment Management System",
+    "description": "A web-based application that streamlines the recruitment process by allowing HR personnel to manage job postings, applications, and candidate evaluations.",
+    "year": 2024,
+    "imageUrl": "/images/projects/rms-003.png",
+    "featuredImages": ["/images/projects/rms-001.png","/images/projects/rms-002.png","/images/projects/rms-003.png","/images/projects/rms-004.png","/images/projects/rms-005.png","/images/projects/rms-006.png"],
+    "projectUrl": "/demo-page/careers/index.html",
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+  },
+  {
+    "slug": "website-maintenance-and-management",
+    "title": "Website Maintenance and Management",
+    "description": "A service that provides regular updates, backups, and security checks for websites to ensure optimal performance and protection against cyber threats.",
+    "year": 2024,
+    "imageUrl": null,
+    "featuredImages": [],
+    "projectUrl": "",
+    "tags": ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+  },
+  {
+    "slug": "asset-tagging-and-tracking-system",
+    "title": "Asset Tagging and Tracking System (Under Development)",
+    "description": "A web-based application that allows organizations to tag and track their assets, such as equipment and inventory, to improve asset management and reduce loss.",
+    "year": 2024,
+    "imageUrl": null,
+    "featuredImages": [],
+    "projectUrl": "",
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+  },
+  {
+    "slug": "activity-attendance-monitoring-system",
+    "title": "Activity Attendance Monitoring System (Under Development)",
+    "description": "A web-based application that allows organizations to monitor and track attendance for events and activities, providing real-time data and reports.",
+    "year": 2024,
+    "imageUrl": null,
+    "featuredImages": [],
+    "projectUrl": "",
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+  },
+  {
+    "slug": "static-website-development",
+    "title": "Static Website Development",
+    "description": "Development of static websites using HTML, CSS, and JavaScript to create visually appealing and responsive web pages for businesses and individuals.",
+    "year": 2024,
+    "imageUrl": null,
+    "featuredImages": [],
+    "projectUrl": "",
+    "tags": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+  }
+]

@@ -4,5 +4,9 @@ export default [
     // index("routes/index.tsx"),
     layout("layouts/index-navbar.tsx", [
         index("routes/index.tsx"),
+        route(
+            "case-studies/:slug",
+            "case-studies/route.tsx"
+        ),
     ])
 ] satisfies RouteConfig;
