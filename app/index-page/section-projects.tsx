@@ -16,6 +16,7 @@ const PortfolioProjects = caseStudies.map((study, index: number) => ({
     caseStudyUrl: `/case-studies/${study.slug}`,
     featuredImages: study.featuredImages,
     tags: study.tags, 
+    caseStudy: study.caseStudy ?? false,
 }));
 
 const modalSettings = {
@@ -206,7 +207,7 @@ export default function SectionProjects( ){
                                 >
                                     Close
                                 </button>
-                                {activeProject.caseStudyUrl && (
+                                {activeProject.caseStudy && (
                                     <Link 
                                         to={activeProject.caseStudyUrl}
                                         className="bg-blue-200 border-blue-700 text-blue-700 px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white cursor-pointer">

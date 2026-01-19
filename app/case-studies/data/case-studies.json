@@ -7,7 +7,8 @@
     "imageUrl": "/images/projects/lms-001.png",
     "featuredImages": ["/images/projects/lms-001.png","/images/projects/lms-002.png","/images/projects/lms-003.png"],
     "projectUrl": "/demo-page/ezleave/login.html",
-    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
+    "caseStudy": true
   },
   {
     "slug": "rms-003",
@@ -17,7 +18,8 @@
     "imageUrl": "/images/projects/rms-003.png",
     "featuredImages": ["/images/projects/rms-001.png","/images/projects/rms-002.png","/images/projects/rms-003.png","/images/projects/rms-004.png","/images/projects/rms-005.png","/images/projects/rms-006.png"],
     "projectUrl": "/demo-page/careers/index.html",
-    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
+    "caseStudy": false
   },
   {
     "slug": "website-maintenance-and-management",
@@ -26,8 +28,9 @@
     "year": 2024,
     "imageUrl": null,
     "featuredImages": [],
-    "projectUrl": "",
-    "tags": ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+    "projectUrl": null,
+    "tags": ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    "caseStudy": false
   },
   {
     "slug": "asset-tagging-and-tracking-system",
@@ -36,8 +39,9 @@
     "year": 2024,
     "imageUrl": null,
     "featuredImages": [],
-    "projectUrl": "",
-    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+    "projectUrl": null,
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
+    "caseStudy": false
   },
   {
     "slug": "activity-attendance-monitoring-system",
@@ -46,8 +50,9 @@
     "year": 2024,
     "imageUrl": null,
     "featuredImages": [],
-    "projectUrl": "",
-    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"]
+    "projectUrl": null,
+    "tags": ["Laravel", "PHP", "jQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
+    "caseStudy": false
   },
   {
     "slug": "static-website-development",
@@ -56,7 +61,8 @@
     "year": 2024,
     "imageUrl": null,
     "featuredImages": [],
-    "projectUrl": "",
-    "tags": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+    "projectUrl": null,
+    "tags": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    "caseStudy": false
   }
 ]

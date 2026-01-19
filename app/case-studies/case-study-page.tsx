@@ -2,7 +2,7 @@
 import { useParams } from "react-router";
 import caseStudies from "./data/case-studies.json";
 
-export default function CaseStudyRoute() {
+export default function CaseStudyPage() {
   const { slug } = useParams();
 
   const caseStudy = caseStudies.find(
